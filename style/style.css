@@ -189,6 +189,18 @@ Experiance
     outline: none;
     font-size: 15px;
 }
+
+.projectContend .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+  
+.projectContend .active:after {
+    content: "\2212";
+}
   
 .projectContend .active, .projectContend .collapsible:hover {
     background-color: #555;
@@ -204,6 +216,9 @@ Experiance
 .projectTypes{
     padding-right: 450px;
 }
+hr.solidw {
+    border-top: 2px solid rgb(214, 214, 214);
+  }
 
 /*
 About Me
