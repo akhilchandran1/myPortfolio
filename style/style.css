@@ -1,0 +1,166 @@
+
+/*
+CSS designing
+*/
+
+:root { /* making root colors */
+    --topnav:#011f29;
+    --topnavHover:#02455a;
+    --fontColourWhite: #fff;
+    --red:#ff0000;
+    --green:#00ff40;
+    --yellow:#ffee00;
+    --blue:#0059ff;
+    --white:#ffffff;
+  }
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.topnav {
+    overflow: hidden;
+    background-color: var(--topnav); /* specifying color (getting from root colers) */
+}
+  
+.topnav a {
+    float: right;
+    color: var(--fontColourWhite);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing: 1px; /* specifying letter spacing */
+}
+  
+.topnav a:hover {
+    background-color:var(--topnavHover);
+}
+
+.cv{
+    float: left; 
+    color: var(--fontColourWhite);
+    padding-left: 40px;
+    letter-spacing: 2px; /* specifying letter spacing */
+    
+}
+
+/*
+contact card
+*/
+
+.contactBtn button{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: var(--white);
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+.card a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    letter-spacing: 10px;
+}
+  
+.contactBtn button:hover, .card a:hover {
+    opacity: 0.7;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    font-family: arial;
+    left: 10px;
+}
+  
+.title {
+    color: grey;
+    font-size: 18px;
+}
+.myImage {
+    max-width: 300px;
+}
+.cardContainer {
+    padding: 30px;
+    height: 0px;
+}
+
+/*
+About Me
+*/
+
+.aboutMe div{
+    max-width: 1200px;
+    text-align: center;
+    font-family: arial;
+}
+.aboutMe {
+    margin-left: 350px;
+    margin-top: 0px;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+.aboutMe h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(10, 21, 37);
+    padding: 10px;
+}
+
+.aboutMe p {
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 3px;
+    line-height: 35px;
+}
+
+
+/* 
+FOOTER 
+*/
+
+footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0; 
+    width: 100%;
+    height: 40px; 
+    background-color: black;
+  }
+  
+.footer { 
+    text-align: center;
+    font-size: 1rem; 
+    color: var(--fontcolourwhite);
+    margin-top: 40px;
+    color: #ffffff; 
+}
+  
+.heartSymbel { 
+    color: var(--red);
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    animation-name: heart;
+    animation-duration: 4s;
+}
+
+@keyframes heart {
+  0%   {color: var(--red);}
+  25%  {color: var(--yellow);}
+  50%  {color: var(--blue);}
+  100% {color: var(--green);}
+}
+
+.heartSymbel:hover {
+font-size: 25px;
+}
