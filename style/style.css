@@ -177,8 +177,8 @@ Experiance
     background-size: 400px;
 }
 
-/* experiance content */
-.experienceContend .collapsible {
+/* Project content */
+.projectContend .collapsible {
     background-color: #777;
     color: white;
     cursor: pointer;
@@ -188,19 +188,20 @@ Experiance
     text-align: left;
     outline: none;
     font-size: 15px;
-  }
+}
   
-  .experienceContend .active, .experienceContend .collapsible:hover {
+.projectContend .active, .projectContend .collapsible:hover {
     background-color: #555;
-  }
+}
   
-  .experienceContend .content {
+.projectContend .content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
-  }
-.experienceTypes{
+}
+
+.projectTypes{
     padding-right: 450px;
 }
 
