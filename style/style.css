@@ -43,9 +43,10 @@ body {
     float: left; 
     color: var(--fontColourWhite);
     padding-left: 40px;
-    letter-spacing: 2px; /* specifying letter spacing */
+    letter-spacing: 2px;
     
 }
+
 
 /*
 contact card
@@ -66,9 +67,11 @@ contact card
   
 .card a {
     text-decoration: none;
-    font-size: 22px;
     color: black;
-    letter-spacing: 10px;
+}
+.socialMediaIcons {
+    letter-spacing: 8px;
+    font-size: 22px;
 }
   
 .contactBtn button:hover, .card a:hover {
@@ -108,6 +111,7 @@ About Me
     margin-top: 0px;
     padding-left: 10px;
     padding-right: 30px;
+    border-bottom: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .aboutMe h1 {
     text-align: center;
@@ -121,8 +125,30 @@ About Me
     text-align: justify;
     letter-spacing: 3px;
     line-height: 35px;
+    padding-bottom: 30px;
+}
+/*
+contend
+*/
+.contend {
+    margin-left: 350px;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+.contend h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px;
 }
 
+/* 
+Solid border 
+*/
+
+hr.solid {
+    border-top: 3px solid rgb(70, 69, 69);
+  }
 
 /* 
 FOOTER 
