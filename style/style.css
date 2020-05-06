@@ -1,192 +1,389 @@
-
 /*
 CSS designing
 */
 
-:root { /* making root colors */
-    --topnav:#011f29;
-    --topnavHover:#02455a;
-    --fontColourWhite: #fff;
-    --red:#ff0000;
-    --green:#00ff40;
-    --yellow:#ffee00;
-    --blue:#0059ff;
-    --white:#ffffff;
-  }
-
+:root {
+  /* making root colors */
+  --topnav: #011f29;
+  --topnavHover: #02455a;
+  --fontColourWhite: #fff;
+  --red: #ff0000;
+  --green: #00ff40;
+  --yellow: #ffee00;
+  --blue: #0059ff;
+  --white: #ffffff;
+}
 
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-  
+
 .topnav {
-    overflow: hidden;
-    background-color: var(--topnav); /* specifying color (getting from root colers) */
+  overflow: hidden;
+  background-color: var(
+    --topnav
+  ); /* specifying color (getting from root colers) */
 }
-  
+
 .topnav a {
-    float: right;
-    color: var(--fontColourWhite);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    letter-spacing: 1px; /* specifying letter spacing */
+  float: right;
+  color: var(--fontColourWhite);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  letter-spacing: 1px; /* specifying letter spacing */
 }
-  
+
 .topnav a:hover {
-    background-color:var(--topnavHover);
+  background-color: var(--topnavHover);
 }
 
-.cv{
-    float: left; 
-    color: var(--fontColourWhite);
-    padding-left: 40px;
-    letter-spacing: 2px;
-    
+.cv {
+  float: left;
+  color: var(--fontColourWhite);
+  padding-left: 40px;
+  letter-spacing: 2px;
 }
-
 
 /*
 contact card
 */
 
-.contactBtn button{
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: var(--white);
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
+.contactBtn button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: var(--white);
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }
-  
+
 .card a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 .socialMediaIcons {
-    letter-spacing: 8px;
-    font-size: 22px;
+  letter-spacing: 8px;
+  font-size: 22px;
 }
-  
-.contactBtn button:hover, .card a:hover {
-    opacity: 0.7;
+
+.contactBtn button:hover,
+.card a:hover {
+  opacity: 0.7;
 }
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    text-align: center;
-    font-family: arial;
-    left: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  font-family: arial;
+  left: 10px;
 }
-  
+
 .title {
-    color: grey;
-    font-size: 18px;
+  color: grey;
+  font-size: 18px;
 }
 .myImage {
-    max-width: 300px;
+  max-width: 300px;
 }
 .cardContainer {
-    padding: 30px;
-    height: 0px;
+  padding: 30px;
+  height: 0px;
 }
 
 /*
 About Me
 */
 
-.aboutMe div{
-    max-width: 1200px;
-    text-align: center;
-    font-family: arial;
+.aboutMe div {
+  max-width: 1200px;
+  text-align: center;
+  font-family: arial;
 }
 .aboutMe {
-    margin-left: 350px;
-    margin-top: 0px;
-    padding-left: 10px;
-    padding-right: 30px;
-    border-bottom: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-left: 350px;
+  margin-top: 0px;
+  padding-left: 10px;
+  padding-right: 30px;
+  border-bottom: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .aboutMe h1 {
-    text-align: center;
-    text-transform: uppercase;
-    color: rgb(10, 21, 37);
-    padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(10, 21, 37);
+  padding: 10px;
 }
 
 .aboutMe p {
-    text-indent: 50px;
-    text-align: justify;
-    letter-spacing: 3px;
-    line-height: 35px;
-    padding-bottom: 30px;
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+  line-height: 35px;
+  padding-bottom: 30px;
 }
 /*
 contend
 */
 .contend {
-    margin-left: 350px;
-    margin-top: 30px;
-    padding-left: 10px;
-    padding-right: 30px;
+  margin-left: 350px;
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-right: 30px;
 }
 .contend h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px;
+}
+
+/*
+My Skills
+*/
+
+.skills {
+  box-sizing: border-box;
+  max-width: 1000px;
+  padding-left: 20%;
+}
+
+.mySkills {
     text-align: center;
     text-transform: uppercase;
     padding: 30px;
+    margin-left: 350px;
+    
 }
 
+.skillsContainer {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills p{
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.html {
+  width: 98%;
+  background-color: #4caf50;
+}
+.css {
+  width: 99%;
+  background-color: #2196f3;
+}
+.js {
+  width: 65%;
+  background-color: #f44336;
+}
+.php {
+  width: 60%;
+  background-color: #808080;
+}
+
+/*
+Education
+*/
+.education {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+  padding-bottom: 30px;
+}
+.education h1 {
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 60%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #ff9f55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+  max-width: 520px;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+  max-width: 508px;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
 /* 
 Solid border 
 */
 
 hr.solid {
-    border-top: 3px solid rgb(70, 69, 69);
-  }
+  border-top: 3px solid rgb(70, 69, 69);
+}
 
 /* 
 FOOTER 
 */
 
 footer {
-    position: fixed;
-    padding: 10px 10px 0px 10px;
-    bottom: 0; 
-    width: 100%;
-    height: 40px; 
-    background-color: black;
-  }
-  
-.footer { 
-    text-align: center;
-    font-size: 1rem; 
-    color: var(--fontcolourwhite);
-    margin-top: 40px;
-    color: #ffffff; 
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: black;
 }
-  
-.heartSymbel { 
-    color: var(--red);
-    font-size: 16px;
-    padding-left: 5px;
-    padding-right: 5px;
-    animation-name: heart;
-    animation-duration: 4s;
+
+.footer {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--fontcolourwhite);
+  margin-top: 40px;
+  color: #ffffff;
+}
+
+.heartSymbel {
+  color: var(--red);
+  font-size: 16px;
+  padding-left: 5px;
+  padding-right: 5px;
+  animation-duration: 4s;
 }
 
 @keyframes heart {
-  0%   {color: var(--red);}
-  25%  {color: var(--yellow);}
-  50%  {color: var(--blue);}
-  100% {color: var(--green);}
+  0% {
+    color: var(--red);
+  }
+  25% {
+    color: var(--yellow);
+  }
+  50% {
+    color: var(--blue);
+  }
+  100% {
+    color: var(--green);
+  }
 }
 
 .heartSymbel:hover {
-font-size: 25px;
+  font-size: 25px;
+  animation-name: heart;
 }
