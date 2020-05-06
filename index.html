@@ -25,7 +25,7 @@
     <div class="cardContainer">
       <div class="card">
         <div class="containerIn">
-          <img src="./image/me.jpg" alt="Akhil" class="myImage" />
+          <img src="./image/MyPhoto/me.jpg" alt="Akhil" class="myImage" />
         </div>
         <h1>Akhil Chandran</h1>
         <p class="title">BSC IT 3rd Year Student</p>
@@ -83,6 +83,69 @@
       <div class="experience">
         <div>
           <h1>Experience</h1>
+          <div class="tab">
+            <button class="tablinks" onclick="openExperience(event, 'Web')" id="defaultOpen">
+              Web Applications
+            </button>
+            <button class="tablinks" onclick="openExperience(event, 'Computer')">
+              Computer Applications
+            </button>
+            <button class="tablinks" onclick="openExperience(event, 'Hybrid')">
+                Hybrid Applications
+            </button>
+          </div>
+          <div class="experienceContend">
+          <div id="Web" class="tabcontent">
+              <div class="experienceTypes">
+            <button type="button" class="collapsible"><h3>Web Applications</h3></button>
+            <div class="content">
+              <p>try</p>
+            </div>
+            <button type="button" class="collapsible"><h3>Web Applications</h3></button>
+            <div class="content">
+              <p>try</p>
+            </div>
+            <button type="button" class="collapsible"><h3>Web Applications</h3></button>
+            <div class="content">
+              <p>try</p>
+            </div>
+        </div>
+          </div>
+
+          <div id="Computer" class="tabcontent">
+            <div class="experienceTypes">
+            <button type="button" class="collapsible"><h3>Computer Applications</h3></button>
+            <div class="content">
+              <p>try</p>
+            </div>
+            <button type="button" class="collapsible"><h3>Computer Applications</h3></button>
+            <div class="content">
+              <p>try</p>
+            </div>
+            <button type="button" class="collapsible"><h3>Computer Applications</h3></button>
+            <div class="content">
+              <p>try</p>
+            </div>
+          </div>
+          </div>
+
+          <div id="Hybrid" class="tabcontent">
+            <div class="experienceTypes">
+            <button type="button" class="collapsible"> <h3>Hybrid Applications</h3></button>
+            <div class="content">
+              <p>try</p>
+            </div>
+            <button type="button" class="collapsible"> <h3>Hybrid Applications</h3></button>
+            <div class="content">
+              <p>try</p>
+            </div>
+            <button type="button" class="collapsible"> <h3>Hybrid Applications</h3></button>
+            <div class="content">
+              <p>try</p>
+            </div>
+          </div>
+          </div>
+        </div>
         </div>
       </div>
       <!--Experience end-->
@@ -233,13 +296,13 @@
     <div class="MoreAboutMe">
       <div>
         <h1>A Little More About Me</h1>
-        <p>
-
-            
-        </p>
+        <p></p>
       </div>
     </div>
     <!--A Little More About Me end-->
+
+    <!-- Import our javascript file -->
+    <script src="./script/script.js"></script>
   </body>
   <footer class="footer">
     <!--start footer-->
