@@ -21,9 +21,10 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: var(
-    --topnav
-  ); /* specifying color (getting from root colers) */
+  background-color: var(--topnav);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .topnav a {
@@ -33,7 +34,7 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  letter-spacing: 1px; /* specifying letter spacing */
+  letter-spacing: 1px;
 }
 
 .topnav a:hover {
@@ -89,7 +90,7 @@ contact card
 }
 
 .socialMediaIcons .fa-instagram:hover {
-    color: #f56040;
+  color: #f56040;
 }
 
 .contactBtn button:hover {
@@ -113,112 +114,8 @@ contact card
 .cardContainer {
   padding: 30px;
   height: 0px;
+  margin-top: 40px;
 }
-/*
-Experiance
-*/
-
-/* Style the tab */
-.experience .tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
-
-/* Style the buttons inside the tab */
-.experience .tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.experience .tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.experience .tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.experience .tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-  min-height: 500px;
-}
-#Web {
-    background-image: url("../image/Experiance/web.png");
-    background-repeat: no-repeat; 
-    background-attachment: top;
-    background-position: right;
-    background-size: 400px;
-}
-#Computer {
-    background-image: url("../image/Experiance/java.png");
-    background-repeat: no-repeat; 
-    background-attachment: top;
-    background-position: right;
-    background-size: 400px;
-}
-#Hybrid {
-    background-image: url("../image/Experiance/Hybrid.png");
-    background-repeat: no-repeat; 
-    background-attachment: top;
-    background-position: right;
-    background-size: 400px;
-}
-
-/* Project content */
-.projectContend .collapsible {
-    background-color: #777;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-}
-
-.projectContend .collapsible:after {
-    content: '\002B';
-    color: white;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
-  
-.projectContend .active:after {
-    content: "\2212";
-}
-  
-.projectContend .active, .projectContend .collapsible:hover {
-    background-color: #555;
-}
-  
-.projectContend .content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-}
-
-.projectTypes{
-    padding-right: 450px;
-}
-hr.solidw {
-    border-top: 2px solid rgb(214, 214, 214);
-  }
 
 /*
 About Me
@@ -249,10 +146,11 @@ About Me
   letter-spacing: 3px;
   line-height: 35px;
   padding-bottom: 30px;
+  padding-left: 7%;
 }
 /*
-contend
-*/
+  contend
+  */
 .contend {
   margin-left: 350px;
   margin-top: 30px;
@@ -263,6 +161,160 @@ contend
   text-align: center;
   text-transform: uppercase;
   padding: 30px;
+}
+
+/*
+Experience
+*/
+
+.ExpTablink {
+  background-color: var(--topnavHover);
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+/* Style the tab content */
+.ExpTabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+  letter-spacing: 3px;
+  line-height: 35px;
+  min-height: 400px;
+}
+
+.ExpTabcontent a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#Crowbid {
+  background-color: var(--topnav);
+}
+#ElderHomeShare {
+  background-color: var(--topnavHover);
+}
+.experience {
+  padding: 40px;
+}
+
+/*
+Projects
+*/
+
+/* Style the tab */
+.project .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: var(--topnavHover);
+}
+
+/* Style the buttons inside the tab */
+.project .tab button {
+  background-color: var(--topnavHover);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: aliceblue;
+}
+
+/* Change background color of buttons on hover */
+.project .tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.project .tab button.active {
+  background-color: var(--topnav);
+}
+
+/* Style the tab content */
+.project .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  min-height: 500px;
+}
+#Web {
+  background-image: url("../image/Experiance/web.png");
+  background-repeat: no-repeat;
+  background-attachment: top;
+  background-position: right;
+  background-size: 400px;
+}
+#Computer {
+  background-image: url("../image/Experiance/java.png");
+  background-repeat: no-repeat;
+  background-attachment: top;
+  background-position: right;
+  background-size: 400px;
+}
+#Hybrid {
+  background-image: url("../image/Experiance/Hybrid.png");
+  background-repeat: no-repeat;
+  background-attachment: top;
+  background-position: right;
+  background-size: 400px;
+}
+
+/* Project content */
+.projectContend .collapsible {
+  background-color: var(--topnav);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.projectContend .collapsible:after {
+  content: "\002B";
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.projectContend .active:after {
+  content: "\2212";
+}
+
+.projectContend .active,
+.projectContend .collapsible:hover {
+  background-color: var(--topnavHover);
+}
+
+.projectContend .content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #eaeafd;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.projectTypes {
+  padding-right: 450px;
+  letter-spacing: 1.5px;
+  font-family: arial;
+}
+hr.solidw {
+  border-top: 2px solid rgb(214, 214, 214);
 }
 
 /*
@@ -346,7 +398,7 @@ Education
 }
 
 /* Container around content */
-.container {
+.EduContainer {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
@@ -354,7 +406,7 @@ Education
 }
 
 /* The circles on the timeline */
-.container::after {
+.EduContainer::after {
   content: "";
   position: absolute;
   width: 25px;
@@ -413,7 +465,7 @@ Education
 }
 
 /* The actual content */
-.content {
+.EduContent {
   padding: 20px 30px;
   background-color: white;
   position: relative;
@@ -428,14 +480,14 @@ Education
   }
 
   /* Full-width containers */
-  .container {
+  .EduContainer {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
 
   /* Make sure that all arrows are pointing leftwards */
-  .container::before {
+  .EduContainer::before {
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
@@ -453,6 +505,7 @@ Education
     left: 0%;
   }
 }
+
 /* 
 Solid border 
 */
