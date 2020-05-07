@@ -5,7 +5,7 @@ CSS designing
 :root {
   /* making root colors */
   --topnav: #011f29;
-  --topnavHover: #017377;
+  --topnavHover: #028286;
   --fontColourWhite: #fff;
   --red: #ff0000;
   --green: #00ff40;
@@ -189,7 +189,7 @@ About Me
   letter-spacing: 3px;
   line-height: 35px;
   padding-bottom: 30px;
-  padding-left: 10%;
+  padding-left: 130px;
 }
 
 /*
@@ -231,6 +231,7 @@ Experience
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
+
 /* Style the tab content */
 .ExpTabcontent {
   color: white;
@@ -653,7 +654,6 @@ footer {
   }
 }
 
-
 @media screen and (max-width: 600px) {
   .topnav a:not(:only-child) {
     display: none;
@@ -689,6 +689,7 @@ footer {
   .aboutMe p {
     letter-spacing: 1px;
     padding-bottom: 0px;
+    padding-left: 8px;
   }
 
   .ExpContend {
