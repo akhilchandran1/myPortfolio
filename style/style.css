@@ -190,20 +190,7 @@ About Me
   padding-bottom: 30px;
   padding-left: 10%;
 }
-/*
-  Expense contend
-  */
-.ExpContend {
-  margin-left: 20%;
-  margin-top: 30px;
-  padding-left: 10px;
-  padding-right: 30px;
-}
-.ExpContend h1 {
-  text-align: center;
-  text-transform: uppercase;
-  padding: 30px;
-}
+
 /*
 Top Navigation responsive
 */
@@ -306,6 +293,17 @@ Experience
   font-size: 17px;
   width: 25%;
 }
+.ExpContend {
+  margin-left: 20%;
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+.ExpContend h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px;
+}
 
 /* Style the tab content */
 .ExpTabcontent {
@@ -316,6 +314,9 @@ Experience
   letter-spacing: 3px;
   line-height: 35px;
   min-height: 400px;
+}
+.ExpContend i {
+  font-size:27px
 }
 
 .ExpTabcontent a {
