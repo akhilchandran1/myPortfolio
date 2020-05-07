@@ -12,14 +12,16 @@
   </head>
   <body>
     <!--top nav bar-->
-    <div class="topnav">
+    <div class="topnav"  id="myTopnav">
       <a href="#contact">Contact Me</a>
-      <a href="#myWork">Sample Works</a>
       <a href="#education">Education</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#aboutMe">About Me</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
       <div class="cv">
         <p href="#aboutMe">CV</p>
       </div>
@@ -30,8 +32,22 @@
     <div class="cardContainer">
       <div class="card">
         <div class="containerIn">
-          <img src="./image/MyPhoto/me.jpg" alt="Akhil" class="myImage" />
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./image/MyPhoto/me.jpg" alt="Akhil" class="myImage" />
+              </div>
+              <div class="flip-card-back">
+                <img
+                  src="./image/MyPhoto/pepro.jpg"
+                  alt="Akhil"
+                  class="myImage"
+                />
+              </div>
+            </div>
+          </div>
         </div>
+
         <h1>Akhil Chandran</h1>
         <p class="title">BSC IT 3rd Year Student</p>
         <p><a href="https://www.cct.ie/">CCT College</a></p>
@@ -53,11 +69,12 @@
       </div>
     </div>
     <!--end profile card-->
-    <br id="aboutMe"><br>
+    <br id="aboutMe" /><br />
     <!--about me-->
     <div class="aboutMe">
       <div>
-        <h1>About Me</h1><br>
+        <h1>About Me</h1>
+        <br />
         <p>
           I am a third year Bachelor of Science in Information Technology
           student. I have completed two Online Courses from Udemy (Ionic 5
@@ -68,49 +85,75 @@
           India. I have 6 years of experience in Accounts (2.3 years in Ireland
           as Accounts Assistant comes Bookkeeper).
         </p>
-      </div><br>
+      </div>
+      <br />
       <hr class="solid" />
     </div>
     <!--about me end-->
 
     <span id="experience"></span>
 
-    <div class="contend">
+    <div class="ExpContend">
       <!--Experience-->
       <div class="experience">
         <div>
           <h1>Experience</h1>
           <div id="Crowbid" class="ExpTabcontent">
-            <a href="https://crowbid.com/"><h2>Crowbid Pvt Ltd (2019 - 2020)</h2></a>
-            <p> <strong>Roles: </strong> Junior Web Developer</p>
+            <a href="https://crowbid.com/"
+              ><h2>Crowbid Pvt Ltd (2019 - 2020)</h2><span class="glyphicon glyphicon-log-in"></span></a
+            >
+            <p><strong>Roles: </strong> Junior Web Developer</p>
             <p>Project Based Work</p>
-            <p> <strong>Technologies: </strong> Photoshop | HTML | CSS | JavaScript | PHP |MySQL</p>
-          </div>
-          
-          <div id="ElderHomeShare" class="ExpTabcontent">
-            <a href="https://www.elderhomeshare.ie/"><h2>Elder Home Share, Dublin (2018 - 2019)</h2></a>
-            <p><strong>Roles: </strong> Web Developer Intern</p> 
-            <h3>Website: 01</h3>
-            <p> <strong>Technologies: </strong> Photoshop | HTML | CSS | JavaScript |MySQL </p>
-            <h3>Website: 02</h3>
-            <p> <strong>Technologies: </strong> Photoshop | Wix Web tool’s | Google Form</p>
+            <p>
+              <strong>Technologies: </strong> Photoshop | HTML | CSS |
+              JavaScript | PHP |MySQL
+            </p>
           </div>
 
-          <button class="ExpTablink" onclick="openExperience('Crowbid', this, 'var(--topnav)')" id="ExpDefaultOpen">Crowbid Pvt Ltd</button>
-          <button class="ExpTablink" onclick="openExperience('ElderHomeShare', this, 'var(--topnavHover)')">Elder Home Share</button>
-          
+          <div id="ElderHomeShare" class="ExpTabcontent">
+            <a href="https://www.elderhomeshare.ie/"
+              ><h2>Elder Home Share, Dublin (2018 - 2019)</h2><span class="glyphicon glyphicon-log-in"></span></a
+            >
+            <p><strong>Roles: </strong> Web Developer Intern</p>
+            <h3>Website: 01</h3>
+            <p>
+              <strong>Technologies: </strong> Photoshop | HTML | CSS |
+              JavaScript |MySQL
+            </p>
+            <h3>Website: 02</h3>
+            <p>
+              <strong>Technologies: </strong> Photoshop | Wix Web tool’s |
+              Google Form
+            </p>
+          </div>
+
+          <button
+            class="ExpTablink"
+            onclick="openExperience('Crowbid', this, 'var(--topnav)')"
+            id="ExpDefaultOpen"
+          >
+            Crowbid Pvt Ltd
+          </button>
+          <button
+            class="ExpTablink"
+            onclick="openExperience('ElderHomeShare', this, 'var(--topnavHover)')"
+          >
+            Elder Home Share
+          </button>
         </div>
       </div>
 
       <!--Experience end-->
 
-      <hr class="solid" id="projects" /><br>
+      <hr class="solid" id="projects" />
+      <br />
 
       <!--Project-->
       <div class="project">
         <div>
-          <h1>Projects</h1><br>
-          <div class="tab">
+          <h1>Projects</h1>
+          <br />
+          <div class="tab" id="projectNav">
             <button
               class="tablinks"
               onclick="openProject(event, 'Web')"
@@ -129,6 +172,13 @@
             <div id="Web" class="tabcontent">
               <div class="projectTypes">
                 <button type="button" class="collapsible">
+                  <h3>My Portfolio (CV)</h3>
+                </button>
+                <div class="content">
+                  <p>HTML, CSS, JavaScript</p>
+                </div>
+                <hr class="solidW" />
+                <button type="button" class="collapsible">
                   <h3>Glass Store Web site with full CRUD operations</h3>
                 </button>
                 <div class="content">
@@ -146,7 +196,7 @@
                   <h3>Website for cirrent Wearher</h3>
                 </button>
                 <div class="content">
-                  <p>HTML, CSS, Javascript, Jquery, JSON, Rest API</p>
+                  <p>HTML, CSS, JavaScript, Jquery, JSON, Rest API</p>
                 </div>
                 <hr class="solidW" />
                 <button type="button" class="collapsible">
@@ -235,44 +285,45 @@
       </div>
       <!--Project end-->
 
-      <hr class="solid" id="skills"/>
+      <hr class="solid" id="skills" />
     </div>
     <!--my skills-->
-    <h1 class="mySkills">My Skills</h1>
+    <div class="mySkills">
+    <h1>My Skills</h1>
     <div class="skills">
       <p>HTML</p>
       <div class="skillsContainer">
-        <div class="skills html">98%</div>
+        <div class="skills html">95%</div>
       </div>
 
       <p>CSS</p>
       <div class="skillsContainer">
-        <div class="skills css">99%</div>
+        <div class="skills css">95%</div>
       </div>
 
       <p>Bootstrap</p>
       <div class="skillsContainer">
-        <div class="skills css">80%</div>
+        <div class="skills bootstrap">60%</div>
       </div>
 
       <p>JavaScript</p>
       <div class="skillsContainer">
-        <div class="skills js">65%</div>
+        <div class="skills js">80%</div>
       </div>
 
       <p>Angular</p>
       <div class="skillsContainer">
-        <div class="skills php">60%</div>
+        <div class="skills angular">70%</div>
       </div>
 
       <p>Typescript</p>
       <div class="skillsContainer">
-        <div class="skills css">80%</div>
+        <div class="skills typeScript">70%</div>
       </div>
 
       <p>MongoDB</p>
       <div class="skillsContainer">
-        <div class="skills js">65%</div>
+        <div class="skills mongoDB">80%</div>
       </div>
 
       <p>PHP</p>
@@ -282,112 +333,135 @@
 
       <p>jQuery</p>
       <div class="skillsContainer">
-        <div class="skills php">60%</div>
+        <div class="skills jQuery">70%</div>
       </div>
 
-      <p>JAVA</p>
+      <p>JAVA / GUI</p>
       <div class="skillsContainer">
-        <div class="skills css">80%</div>
-      </div>
-
-      <p>GUI</p>
-      <div class="skillsContainer">
-        <div class="skills js">85%</div>
+        <div class="skills java">80%</div>
       </div>
 
       <p>Ionic - 5</p>
       <div class="skillsContainer">
-        <div class="skills js">75%</div>
+        <div class="skills ionic">80%</div>
       </div>
 
       <p>Json</p>
       <div class="skillsContainer">
-        <div class="skills php">90%</div>
+        <div class="skills json">90%</div>
       </div>
 
       <p>MySQL</p>
       <div class="skillsContainer">
-        <div class="skills php">90%</div>
-      </div>
-
-      <p>Json</p>
-      <div class="skillsContainer">
-        <div class="skills php">770%</div>
+        <div class="skills mySql">90%</div>
       </div>
 
       <p>XML</p>
       <div class="skillsContainer">
-        <div class="skills php">60%</div>
+        <div class="skills xml">70%</div>
       </div>
-    </div><br>
+      <p>Team Work</p>
+      <div class="skillsContainer">
+        <div class="skills teamWork">95%</div>
+      </div>
+      <p>API</p>
+      <div class="skillsContainer">
+        <div class="skills api">80%</div>
+      </div>
+      <p>Gitpod & Github</p>
+      <div class="skillsContainer">
+        <div class="skills git">90%</div>
+      </div>
+      <p>Firebase</p>
+      <div class="skillsContainer">
+        <div class="skills firebase">70%</div>
+      </div>
+      <p>Photoshop,  Illustrator</p>
+      <div class="skillsContainer">
+        <div class="skills photoshop">80%</div>
+      </div>
+      <p> Visual Studio Code, Sublime Text, Eclipse, NetBeans,
+        XAMPP, MySQLWorkbench, Postman, Xcode, Android Studio</p>
+      <div class="skillsContainer">
+        <div class="skills applicationSoftwares">80%</div>
+      </div>
+      <p>Basecamp, Scrumwise, Slack, Zoom, Zoho, Asana, Skype, Google hangout, Team Viewer</p>
+      <div class="skillsContainer">
+        <div class="skills teamWorkSoftwares">95%</div>
+      </div>
+      <p>Prezi, Power point</p>
+      <div class="skillsContainer">
+        <div class="skills presentation">95%</div>
+      </div>
+
+    </div>
+  </div>
+    <br />
     <!--end my skills-->
 
-    <span id="education"></span><br><br>
+    <span id="education"></span><br /><br />
 
     <div>
       <!--Education-->
       <div class="education">
-        <div>
-          <h1>Education</h1>
-          <div class="timeline">
-            <div class="EduContainer right">
-              <div class="EduContent">
-                <h2>2017 - Present</h2>
-                <h4>Bachelor of Science in Information Technology (BSC IT)</h4>
-                <p>
-                  CCT College, Dublin
-                </p>
-              </div>
+        <h1>Education</h1>
+        <div class="timeline">
+          <div class="EduContainer right">
+            <div class="EduContent">
+              <h2>2017 - Present</h2>
+              <h4>Bachelor of Science in Information Technology (BSC IT)</h4>
+              <p>
+                CCT College, Dublin
+              </p>
             </div>
-            <div class="EduContainer left">
-              <div class="EduContent">
-                <h2>2020 - 2020</h2>
-                <h4>Ionic 5 (Online Course)</h4>
-                <p>
-                  Udemy
-                </p>
-              </div>
+          </div>
+          <div class="EduContainer left">
+            <div class="EduContent">
+              <h2>2020 - 2020</h2>
+              <h4>Ionic 5 (Online Course)</h4>
+              <p>
+                Udemy
+              </p>
             </div>
-            <div class="EduContainer right">
-              <div class="EduContent">
-                <h2>2019 - 2020</h2>
-                <h4>Web Developer Bootcamp (Online Course)</h4>
-                <p>
-                  Udemy
-                </p>
-              </div>
+          </div>
+          <div class="EduContainer right">
+            <div class="EduContent">
+              <h2>2019 - 2020</h2>
+              <h4>Web Developer Bootcamp (Online Course)</h4>
+              <p>
+                Udemy
+              </p>
             </div>
-            <div class="EduContainer left">
-              <div class="EduContent">
-                <h2>2015 - 2016</h2>
-                <h4>International Business Management</h4>
-                <p>
-                  Griffith College, Dublin
-                </p>
-              </div>
+          </div>
+          <div class="EduContainer left">
+            <div class="EduContent">
+              <h2>2015 - 2016</h2>
+              <h4>International Business Management</h4>
+              <p>
+                Griffith College, Dublin
+              </p>
             </div>
-            <div class="EduContainer right">
-              <div class="EduContent">
-                <h2>2007 - 2010</h2>
-                <h4>Bachelor of Commerce with Computer Application</h4>
-                <p>M.G University, India</p>
-              </div>
+          </div>
+          <div class="EduContainer right">
+            <div class="EduContent">
+              <h2>2007 - 2010</h2>
+              <h4>Bachelor of Commerce with Computer Application</h4>
+              <p>M.G University, India</p>
             </div>
           </div>
         </div>
       </div>
       <!--Education end-->
-    </div><br>
+    </div>
+    <br />
 
-    <!--A Little More About Me-->
-    <div class="MoreAboutMe">
+    <!--Refrance-->
+    <div class="refrance">
       <div>
-        <h1>A Little More About Me</h1>
-        
-        <p><strong>INTERESTS : </strong> Socializing, Music, Party</p>
+        <h1>REFERENCE : Available on Request</h1>
       </div>
     </div>
-    <!--A Little More About Me end-->
+    <!--Refrance-->
 
     <!-- Import our javascript file -->
     <script src="./script/script.js"></script>
