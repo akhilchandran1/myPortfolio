@@ -671,7 +671,11 @@ Refrance
 */
 
 .refrance {
-  padding: 60px;
+  padding: 40px;
+  background-color: var(--topnav);
+  color: aliceblue;
+  line-height: 30px;
+  letter-spacing: 3px;
 }
 
 /* 
