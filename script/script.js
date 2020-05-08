@@ -1,3 +1,83 @@
+// Chatbot ------------>>>
+
+const talk = document.querySelector('.talk');
+const voiceToText = document.querySelector('.voiceToText');
+
+const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+const recoder = new SpeechRecognition();
+
+recoder.onstart = () => {
+    console.log('Hey, I am here..!! Lets Talk');
+    const transcript = "Hey, I am here..!! Lets Talk";
+    voiceToText.textContent = transcript
+
+};
+
+recoder.onresult = (event) => {
+    
+    const current = event.resultIndex;
+    const transcript = event.results[current][0].transcript;
+    voiceToText.textContent = transcript
+    chatbotVoice(transcript);
+    console.log(event);
+
+};
+
+talk.addEventListener('click', () => {
+    recoder.start();
+});
+
+function chatbotVoice(message){
+    const speech = new SpeechSynthesisUtterance();
+    speech.text = "I am sorry. Akhil didnt teach me to answer this question.";
+    if(message.includes('how are you')) {
+        speech.text = "I am fine, thanks. How are you ?";
+    }else if(message.includes('downtown')) {
+        speech.text = "I know its hard time for everyone. we will overcome this situation very soon";
+    }else if (message.includes('tell me about yourself')) {
+        speech.text = "You already know about me from my C.V, so i will tell you something is not in my C.V. I like swimming, travelling, parties";
+    }else if (message.includes('when you can start')) {
+        speech.text = "I not working, I am available to start";
+    }else if (message.includes('when can you start')) {
+        speech.text = "I not working, I am available to start";
+    }else if (message.includes('current visa')) {
+        speech.text = "I am eligible to work but I am not holding Stamp 4. I am in stamp 2 visa";
+    }else if (message.includes('currently working')) {
+        speech.text = "no. I am not working at the moment.";
+    }else if (message.includes('finish your college')) {
+        speech.text = "I will finish in july";
+    }else if(message.includes('currently available')) {
+        speech.text = "I not working, I am available to start";
+    }else if(message.includes('eligible to work')) {
+        speech.text = "I am eligible to work but I am not holding Stamp 4. I am in stamp 2 visa";
+    }else if (message.includes('intrested to work')) {
+        speech.text = "yes, I am intrested.";
+    }else if (message.includes('current status')) {
+        speech.text = "Looking for a job.";
+    }else if (message.includes('holding stamp 4')) {
+        speech.text = "No, I am not, I am in Stamp 2 visa"
+    }else if (message.includes('strength and weakness')) {
+        speech.text = "I am good in Graphic designing, I like to learn and impliment new techonologies and I am also a good team player..... but I am bad in Networking, especially in wire shark. ";
+    }else if (message.includes('salary expectations')) {
+        speech.text = "30000 per year or above";
+    }else if (message.includes('about an achievement')) {
+        speech.text = "I am in my last semester of B.S.C I T. and its going to be my third graduation. I already have a batchler degree in Accounts and pre masters in business so i believe its a great achievement";
+    }
+
+    speech.volume = 1;
+    speech.rate = 1;
+    speech.pitch = 1;
+    window.speechSynthesis.speak(speech)
+}
+
+function openChat() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeChat() {
+    document.getElementById("myForm").style.display = "none";
+  }
+
 // Project Tab ---------->>>
 
 function openProject(evt, projectName) {

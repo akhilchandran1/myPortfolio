@@ -29,6 +29,30 @@
     </div>
     <!--end topnav-->
 
+    <!--chat Bot-->
+    <div id="myChatbot" class="sidenav">
+      <a href="#" id="chatbot" class="talk" onclick="openChat()">Talk</a>
+    </div>
+    <div class="chatBox">
+      <div class="chat-popup" id="myForm">
+        <form class="roboForm-container">
+          <div class="myRobo">
+          <img src="./image/chatbot/chatbot.gif" />
+          <span class="pocking">...oooh. Why is that for.?
+          </span>
+          </div>
+
+          <label for="msg"><b>See what I understand</b></label>
+          <textarea name="msg" class="voiceToText"></textarea>
+          <p class="voiceToText"></p>
+          <button type="button" class="btn cancel" onclick="closeChat()">
+            Close
+          </button>
+        </form>
+      </div>
+    </div>
+    <!--end chat bot-->
+
     <!--profile card-->
     <div class="cardContainer">
       <div class="card">
@@ -144,7 +168,7 @@
             <i class="fab fa-html5"></i>
             <h3>Website: 02</h3>
             <p>
-              <strong>Technologies: </strong> Photoshop | Wix Web tool’s |
+              <strong>Technologies: </strong> Photoshop | Wix Web tools |
               Google Form
             </p>
             <i class="fab fa-wix"></i>
@@ -266,14 +290,15 @@
               <div class="projectTypes">
                 <button type="button" class="collapsible">
                   <h3>
-                    Stock Market Simulator (Implementation of different design patterns),
-                    Group Project
+                    Stock Market Simulator (Implementation of different design
+                    patterns), Group Project
                   </h3>
                 </button>
                 <div class="content">
                   <p>
-                    The purpose of this project is to learn to use and understand the
-                    importance of design patterns and experiance in team work. (need to use multiple design patterns)
+                    The purpose of this project is to learn to use and
+                    understand the importance of design patterns and experiance
+                    in team work. (need to use multiple design patterns)
                   </p>
                   <p>JAVA, Github</p>
                   <i class="fab fa-java"></i>
@@ -288,8 +313,9 @@
                 </button>
                 <div class="content">
                   <p>
-                    The purpose of this project is to learn to use and understand the
-                    importance of design patterns and experiance in team work.  
+                    The purpose of this project is to learn to use and
+                    understand the importance of design patterns and experiance
+                    in team work.
                   </p>
                   <p>
                     JAVA, GUI, Use real database provided by college, Github
@@ -304,8 +330,7 @@
                   </h3>
                 </button>
                 <div class="content">
-                  <p>
-                  </p>
+                  <p></p>
                   <p>JAVA, GUI, MySQL (Database)</p>
                   <i class="fab fa-java"></i>
                   <i class="fab fa-github"></i>
@@ -568,21 +593,21 @@
     </div>
     <!--Refrance-->
 
+    <!--start footer-->
+    <footer class="footer">
+      <div class="footerContainer">
+        <!--div start with class-->
+        <!--footer with copy symbol, class, heart symbole and my name and student id-->
+        <small
+          >&copy; 2020 made with<span class="heartSymbel">&#10084; </span>by
+          Akhil Chandran</small
+        >
+      </div>
+      <!--end div-->
+    </footer>
     <!-- Import our javascript file -->
     <script src="./script/script.js"></script>
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </body>
-  <footer class="footer">
-    <!--start footer-->
-    <div class="footerContainer">
-      <!--div start with class-->
-      <!--footer with copy symbol, class, heart symbole and my name and student id-->
-      <small
-        >&copy; 2020 made with<span class="heartSymbel">&#10084; </span>by Akhil
-        Chandran</small
-      >
-    </div>
-    <!--end div-->
-  </footer>
 </html>
