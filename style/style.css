@@ -221,6 +221,7 @@ Experience
   padding-left: 10px;
   padding-right: 30px;
 }
+
 .ExpContend h1 {
   text-align: center;
   text-transform: uppercase;
@@ -362,6 +363,15 @@ Projects
   background-color: #eaeafd;
   letter-spacing: 1px;
   line-height: 30px;
+}
+.projectTypes .content i {
+  padding: 10px 10px 10px 5px;
+
+}
+.projectTypes .content i:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .projectTypes {
@@ -568,6 +578,10 @@ Refrance
   background-color: var(--topnav);
   color: aliceblue;
   line-height: 30px;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+.refrance h1 {
   letter-spacing: 3px;
 }
 
@@ -617,8 +631,16 @@ footer {
   animation-name: heart;
 }
 
-
-
+@media screen and (max-width: 400px) {
+.project .tab button {
+  font-size: 14px;
+}
+.projectContend .content {
+min-width: 250px;
+max-width: 300px;
+width: 70%;
+}
+}
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
@@ -710,16 +732,15 @@ footer {
   .ExpTabcontent {
     letter-spacing: 1.5px;
     font-size: 13px;
-    padding: 8px;
     margin-right: 40px;
   }
   .experience {
     padding: 0px;
   }
 
-.endExpSolid hr{
-  margin-top: 54px;
-}
+  .endExpSolid hr {
+    margin-top: 54px;
+  }
 
   .project {
     padding-top: -8px;
@@ -734,6 +755,7 @@ footer {
     line-height: 25px;
     min-width: 340px;
     font-size: 13px;
+    width: 90%;
   }
   .projectContend .collapsible {
     background-color: var(--topnav);
@@ -741,14 +763,13 @@ footer {
     font-size: 11px;
     letter-spacing: 1px;
     width: 90%;
-
   }
   .projectTypes button {
     min-width: 340px;
   }
-.project .tabcontent {
-  padding: 12px 3px;
-}
+  .project .tabcontent {
+    padding: 12px 3px;
+  }
 
   .skills {
     padding-left: 2%;
@@ -770,5 +791,13 @@ footer {
     font-size: 13px;
     min-width: 200px;
   }
+.refrance {
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  padding-bottom: 20%;
+}
+.refrance h1 {
+font-size: 30px;
 }
 
+}
