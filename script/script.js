@@ -25,6 +25,7 @@ recoder.onresult = (event) => {
 
 talk.addEventListener('click', () => {
     recoder.start();
+
 });
 
 function chatbotVoice(message) {
@@ -34,13 +35,15 @@ function chatbotVoice(message) {
         speech.text = "I am fine, thanks. How are you ?. I know its hard time for everyone. we will overcome this situation very soon";
     } else if (message.includes('email ID')) {
         speech.text = "offcourse. yes. my email I D is: akhil9216@gmail.com";
-    } else if (message.includes('your mobile number')) {
+    } else if (message.includes('mobile number')) {
         speech.text = "offcourse. yes. my mobile number is 0892126803";
-    } else if (message.includes('your contact number')) {
+    } else if (message.includes('contact number')) {
         speech.text = "offcourse. yes. my mobile number is 0892126803";
-    } else if (message.includes('Whats your name')) {
-        speech.text = "I am Robo. but i am pretending Akhil so you can talk me like you talk to Akhil";
-    } else if (message.includes('tell me about yourself')) {
+    } else if (message.includes('you know')) {
+        speech.text = "I know the answer of How are you, I know the answer of Whats your name, I know the answer of Whats your Email ID, I know the answer of Whats your Mobile number, I know the answer of Whats your Contact number, I know the answer of Tell me about yourself, I know the answer of When will you available to start, I know the answer of whats your current visa status, I know the answer of Are you eligible to work in Ireland, I know the answer of Are you currently working, I know the answer of When will you finish your college, I know the answer of Are you currently available to start, I know the answer of Can you start working from home, I know the answer of Are you intrested in part time, I know the answer of Are you planning to study Masters, I know the answer of Are you holding stamp 4 , I know the answer of Tell me about your strength and weakness, I know the answer of What is your salary expectation, I know the answer of Talk about an achievement";
+    } else if (message.includes('your name')) {
+        speech.text = "I am dont have a name. but i am pretending Akhil, so you can talk me like you talk to Akhil";
+    } else if (message.includes('about yourself')) {
         speech.text = "You already know about me from my C.V, so i will tell you something is not in my C.V. I like swimming, travelling, parties";
     } else if (message.includes('availavle to start')) {
         speech.text = "I am available to start but I only finish my college in July. ";
@@ -73,7 +76,7 @@ function chatbotVoice(message) {
     speech.volume = 1;
     speech.rate = 1;
     speech.pitch = 1;
-    window.speechSynthesis.speak(speech)
+    window.speechSynthesis.speak(speech);
 }
 
 function openChat() {

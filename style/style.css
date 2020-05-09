@@ -132,7 +132,7 @@ Chatbot
 
 /* Set a style for the submit/send button */
 .chatBox .roboForm-container .btn {
-  background-color: #4CAF50;
+  background-color: rgb(3, 110, 6);
   color: white;
   padding: 16px 20px;
   border: none;
@@ -140,6 +140,11 @@ Chatbot
   width: 100%;
   margin-bottom:10px;
   opacity: 0.8;
+  border-radius: 5px 5px 5px 5px;
+  font-size: medium;
+}
+.btn i {
+  padding-right: 10px;
 }
 
 .myRobo img:hover{
@@ -181,12 +186,16 @@ Chatbot
 
 /* Add a red background color to the cancel button */
 .chatBox .roboForm-container .cancel {
-  background-color: red;
+  background-color: rgb(223, 3, 3);
+  border-radius: 5px 5px 5px 5px;
 }
 
 /* Add some hover effects to buttons */
 .chatBox .roboForm-container .btn:hover, .open-button:hover {
   opacity: 1;
+}
+.roboKnowledge button i {
+padding-right: 20px;
 }
 
 .roboKnowledge .whatIKnow {
@@ -196,14 +205,13 @@ Chatbot
   color: #fff;
   text-align: left;
   letter-spacing: 1.3px;
-  line-height: 30px;
-  border-radius: 6px;
-  padding: 5px 0;
+  line-height: 20px;
+  max-width: 300px;
+  padding: 5px 5px;
   position: absolute;
   z-index: 1;
-  bottom: 10%;
-  left: -100%;
-  margin-left: -55px;
+  bottom: 50%;
+  margin-left: -50px;
 }
 .whatIKnow {
   padding-left: 30px;
@@ -242,9 +250,9 @@ contact card
   font-size: 18px;
 }
 
-.card a {
+.card .socialMediaIcons a {
   text-decoration: none;
-  color: black;
+  color: rgb(10, 10, 10);
 }
 .socialMediaIcons {
   letter-spacing: 8px;
@@ -267,8 +275,9 @@ contact card
   color: #f56040;
 }
 
-.contactBtn a{
+.contactBtn button a{
   color: white;
+  text-decoration: none;
 }
 
 .contactBtn button:hover {
