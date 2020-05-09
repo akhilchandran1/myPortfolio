@@ -279,6 +279,10 @@ contact card
   color: white;
   text-decoration: none;
 }
+.cctCollege a{
+  text-decoration: none;
+  color: black;
+}
 
 .contactBtn button:hover {
   background-color: #034b63;
