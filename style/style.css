@@ -164,7 +164,7 @@ Chatbot
   margin-left: -55px;
 }
 
-.myRobo .tpocking::after {
+.myRobo .pocking::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -189,6 +189,40 @@ Chatbot
   opacity: 1;
 }
 
+.roboKnowledge .whatIKnow {
+  visibility: hidden;
+  width: 500px;
+  background-color: black;
+  color: #fff;
+  text-align: left;
+  letter-spacing: 1.3px;
+  line-height: 30px;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 10%;
+  left: -100%;
+  margin-left: -55px;
+}
+.whatIKnow {
+  padding-left: 30px;
+}
+
+.roboKnowledge .whatIKnow::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.roboKnowledge:hover .whatIKnow  {
+  visibility: visible;
+}
 
 
 /*
@@ -233,8 +267,12 @@ contact card
   color: #f56040;
 }
 
+.contactBtn a{
+  color: white;
+}
+
 .contactBtn button:hover {
-  opacity: 0.7;
+  background-color: #034b63;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

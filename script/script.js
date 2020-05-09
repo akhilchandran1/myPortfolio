@@ -14,7 +14,7 @@ recoder.onstart = () => {
 };
 
 recoder.onresult = (event) => {
-    
+
     const current = event.resultIndex;
     const transcript = event.results[current][0].transcript;
     voiceToText.textContent = transcript
@@ -27,40 +27,46 @@ talk.addEventListener('click', () => {
     recoder.start();
 });
 
-function chatbotVoice(message){
+function chatbotVoice(message) {
     const speech = new SpeechSynthesisUtterance();
     speech.text = "I am sorry. Akhil didnt teach me to answer this question.";
-    if(message.includes('how are you')) {
-        speech.text = "I am fine, thanks. How are you ?";
-    }else if(message.includes('downtown')) {
-        speech.text = "I know its hard time for everyone. we will overcome this situation very soon";
-    }else if (message.includes('tell me about yourself')) {
+    if (message.includes('how are you')) {
+        speech.text = "I am fine, thanks. How are you ?. I know its hard time for everyone. we will overcome this situation very soon";
+    } else if (message.includes('email ID')) {
+        speech.text = "offcourse. yes. my email I D is: akhil9216@gmail.com";
+    } else if (message.includes('your mobile number')) {
+        speech.text = "offcourse. yes. my mobile number is 0892126803";
+    } else if (message.includes('your contact number')) {
+        speech.text = "offcourse. yes. my mobile number is 0892126803";
+    } else if (message.includes('Whats your name')) {
+        speech.text = "I am Robo. but i am pretending Akhil so you can talk me like you talk to Akhil";
+    } else if (message.includes('tell me about yourself')) {
         speech.text = "You already know about me from my C.V, so i will tell you something is not in my C.V. I like swimming, travelling, parties";
-    }else if (message.includes('when you can start')) {
-        speech.text = "I not working, I am available to start";
-    }else if (message.includes('when can you start')) {
-        speech.text = "I not working, I am available to start";
-    }else if (message.includes('current visa')) {
+    } else if (message.includes('availavle to start')) {
+        speech.text = "I am available to start but I only finish my college in July. ";
+    } else if (message.includes('visa status')) {
+        speech.text = "I am in student visa. stamp 2";
+    } else if (message.includes('eligible to work')) {
         speech.text = "I am eligible to work but I am not holding Stamp 4. I am in stamp 2 visa";
-    }else if (message.includes('currently working')) {
+    } else if (message.includes('currently working')) {
         speech.text = "no. I am not working at the moment.";
-    }else if (message.includes('finish your college')) {
+    } else if (message.includes('finish your college')) {
         speech.text = "I will finish in july";
-    }else if(message.includes('currently available')) {
+    } else if (message.includes('currently available')) {
         speech.text = "I not working, I am available to start";
-    }else if(message.includes('eligible to work')) {
-        speech.text = "I am eligible to work but I am not holding Stamp 4. I am in stamp 2 visa";
-    }else if (message.includes('intrested to work')) {
-        speech.text = "yes, I am intrested.";
-    }else if (message.includes('current status')) {
-        speech.text = "Looking for a job.";
-    }else if (message.includes('holding stamp 4')) {
-        speech.text = "No, I am not, I am in Stamp 2 visa"
-    }else if (message.includes('strength and weakness')) {
+    } else if (message.includes('working from home')) {
+        speech.text = "yes. I can start working from home.";
+    } else if (message.includes('part time job')) {
+        speech.text = "yes, but i will keep looking for fulltime job, so i will resign when I get a fulltime position";
+    } else if (message.includes('study masters')) {
+        speech.text = "No, I am only looking for a job now";
+    } else if (message.includes('holding stamp 4')) {
+        speech.text = "No, I am not, I am in Stamp 2 visa";
+    } else if (message.includes('strength and weakness')) {
         speech.text = "I am good in Graphic designing, I like to learn and impliment new techonologies and I am also a good team player..... but I am bad in Networking, especially in wire shark. ";
-    }else if (message.includes('salary expectations')) {
+    } else if (message.includes('salary expectation')) {
         speech.text = "30000 per year or above";
-    }else if (message.includes('about an achievement')) {
+    } else if (message.includes('about an achievement')) {
         speech.text = "I am in my last semester of B.S.C I T. and its going to be my third graduation. I already have a batchler degree in Accounts and pre masters in business so i believe its a great achievement";
     }
 
@@ -72,11 +78,11 @@ function chatbotVoice(message){
 
 function openChat() {
     document.getElementById("myForm").style.display = "block";
-  }
-  
-  function closeChat() {
+}
+
+function closeChat() {
     document.getElementById("myForm").style.display = "none";
-  }
+}
 
 // Project Tab ---------->>>
 
@@ -139,8 +145,8 @@ document.getElementById("ExpDefaultOpen").click();
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
-      x.className += " responsive";
+        x.className += " responsive";
     } else {
-      x.className = "topnav";
+        x.className = "topnav";
     }
-  }
+}
