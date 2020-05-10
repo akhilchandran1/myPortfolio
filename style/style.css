@@ -293,6 +293,7 @@ contact card
   text-align: center;
   font-family: arial;
   left: 10px;
+  z-index: 10;
 }
 
 .title {
@@ -380,6 +381,10 @@ About Me
   line-height: 35px;
   padding-bottom: 30px;
   padding-left: 130px;
+}
+
+.aboutUsDiv {
+  margin-left:10%;
 }
 
 /*
