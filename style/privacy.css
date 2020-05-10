@@ -1,0 +1,35 @@
+
+body h1 {
+  text-align: center;
+  padding: 5%;
+  letter-spacing: 2.5px;
+}
+
+body h3 {
+  text-align: left;
+  padding-left: 3%;
+  padding-right: 5%;
+  padding-bottom: 1%;
+}
+
+body .contend {
+  text-align: justify;
+  padding-left: 3%;
+  padding-right: 3%;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  padding-bottom: 3%;
+}
+
+.subPrivacy {
+  margin-left: 5%;
+}
+
+.homePageTbar {
+    padding-left: 30px;
+}
+.topnav i {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #7bff00;
+}
