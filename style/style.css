@@ -27,6 +27,11 @@ body {
   width: 100%;
   z-index: 10;
 }
+.topnav i {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #d0ff00;
+}
 
 .topnav a {
   float: right;

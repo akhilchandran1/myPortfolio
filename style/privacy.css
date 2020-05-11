@@ -1,7 +1,7 @@
 
 body h1 {
   text-align: center;
-  padding: 5%;
+  margin-top: 90px;
   letter-spacing: 2.5px;
 }
 
@@ -27,9 +27,4 @@ body .contend {
 
 .homePageTbar {
     padding-left: 30px;
-}
-.topnav i {
-    padding-left: 10px;
-    padding-right: 10px;
-    color: #7bff00;
 }
