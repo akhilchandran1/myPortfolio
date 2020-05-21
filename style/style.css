@@ -49,6 +49,14 @@ body {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
+/*
+Top Navigation responsive
+*/
+
+.topnav .icon {
+  display: none;
+}
+
 
 .cv {
   float: left;
@@ -399,13 +407,6 @@ About Me
   margin-left:10%;
 }
 
-/*
-Top Navigation responsive
-*/
-
-.topnav .icon {
-  display: none;
-}
 
 /*
 Experience
@@ -817,11 +818,7 @@ footer {
   padding-right: 5px;
   animation-duration: 4s;
 }
-.privacyPolicy a {
-  text-decoration: none;
-  color: #e4fc78;
-  padding-left: 30px;
-}
+
 
 @keyframes heart {
   0% {

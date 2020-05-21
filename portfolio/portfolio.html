@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akhil Chandran - CV</title>
+  <link
+    rel="shortcut icon"
+    type="image/png"
+    href="image/favicon/favicon.png"
+  />
+  <meta
+  name="viewport"
+  content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="HandheldFriendly" content="true" />
 <link rel="stylesheet" href="./portfolio.style/portfolio.style.css">
 </head>
 <body>
 
+      <!--top nav bar-->
+      <div class="topnav" id="myTopnav">
+        <a href="../portfolio/portfolio.html">Sample Works <i class='fas fa-sign-out-alt'></i></a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#aboutMe">About Me</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <div class="cv">
+          <p href="#aboutMe">CV</p>
+        </div>
+      </div>
+      <!--end topnav-->
+      <br>
+
 <!-- MAIN (Center website) -->
 <div class="main">
 
-<h1>SAMPLE WORK'S</h1>
-<hr>
-
-<h2>PORTFOLIO</h2>
+<h1 class="sampleWork-H1">PORTFOLIO</h1>
 
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
@@ -133,6 +159,21 @@
 
 <!-- END MAIN -->
 </div>
+
+    <!--start footer-->
+    <footer class="footer">
+      <div class="footerContainer">
+        <!--div start with class-->
+        <!--footer with copy symbol, class, heart symbole and my name and student id-->
+        <small
+          >&copy; 2020 made with<span class="heartSymbel">&#10084; </span>by
+          Akhil Chandran
+          </small
+        >
+      </div>
+      <!--end div-->
+    </footer>
+
 <script src="./portfolio.script/portfolio.script.js"></script>
 </body>
 </html>
