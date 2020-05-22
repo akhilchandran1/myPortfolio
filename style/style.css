@@ -42,6 +42,10 @@ body {
   font-size: 17px;
   letter-spacing: 1px;
 }
+.topnav:active {
+  background-color: var(--topnavHover);
+  color: white;
+}
 
 .topnav a:hover {
   background-color: var(--topnavHover);
@@ -68,7 +72,7 @@ Top Navigation responsive
 .cv:hover {
   -ms-transform: scale(1.5);
   -webkit-transform: scale(1.5);
-  transform: scale(1.5);
+  transform: scale(1.2);
   color: #d0ff00;
 }
 
