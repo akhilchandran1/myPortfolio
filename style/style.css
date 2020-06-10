@@ -75,6 +75,7 @@ Top Navigation responsive
   transform: scale(1.2);
   color: #d0ff00;
 }
+/*________________________________*/
 
 /*
 Chatbot
@@ -255,12 +256,40 @@ padding-right: 20px;
 .roboKnowledge:hover .whatIKnow  {
   visibility: visible;
 }
-
+/*______________________________________*/
 
 /*
-contact card
+profile card
 */
+.card.hovercard {
+  position: relative;
+  padding-top: 0;
+  text-align: center;
+  background-color: rgba(214, 224, 226, 0.2);
+}
 
+.card.hovercard .cardheader {
+  background: url("../image/MyPhoto/graduation.jpg");
+  background-size: cover;
+  height: 135px;
+}
+
+.card.hovercard .avatar {
+  position: relative;
+  top: -50px;
+  margin-bottom: -50px;
+}
+
+.card.hovercard .avatar img {
+  width: 100px;
+  height: 100px;
+  max-width: 100px;
+  max-height: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid rgba(255,255,255,0.5);
+}
 .contactBtn button {
   border: none;
   outline: 0;
@@ -327,13 +356,14 @@ contact card
 .myImage {
   max-width: 300px;
 }
-.cardContainer {
+.container {
   padding: 30px;
   height: 0px;
-  margin-top: 40px;
+  margin-top: 64px;
 }
 
 /* Flip image */
+/*
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -374,7 +404,8 @@ contact card
   color: white;
   transform: rotateY(180deg);
 }
-
+*/
+/*______________________________*/
 /*
 About Me
 */
@@ -1065,7 +1096,7 @@ width: auto;
 /*_____________________________*/
 
 /* */
-.cardContainer {
+.container {
   padding-left: 30%;
 }
 
@@ -1170,3 +1201,4 @@ font-size: 30px;
 }
 
 }
+
