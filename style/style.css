@@ -346,7 +346,6 @@ profile card
   text-align: center;
   font-family: arial;
   left: 10px;
-  z-index: 10;
 }
 
 .title {
@@ -356,12 +355,12 @@ profile card
 .myImage {
   max-width: 300px;
 }
-.container {
+.cardContainer {
   padding: 30px;
   height: 0px;
-  margin-top: 64px;
+  margin-top: 40px;
+  padding-left: 10px;
 }
-
 /* Flip image */
 /*
 .flip-card {
@@ -433,7 +432,7 @@ About Me
   text-indent: 50px;
   text-align: justify;
   letter-spacing: 3px;
-  line-height: 35px;
+  line-height: 40px;
   padding-bottom: 30px;
   padding-left: 130px;
 }
@@ -897,7 +896,7 @@ width: 70%;
 
   /* About me */
   .aboutMe {
-    padding-top: 500px;
+    padding-top: 428px;
   }
   .aboutMe p{
     padding-left: 0px;
@@ -905,7 +904,9 @@ width: 70%;
   .aboutMe, .ExpContend {
     margin-left: 2%;
   }
-
+.card{
+  left: -73px;
+}
   /*_________________________*/
 
   /* to navigation bar view changing show menu as child*/
@@ -1094,12 +1095,6 @@ width: auto;
     transform: none;
   }
 /*_____________________________*/
-
-/* */
-.container {
-  padding-left: 30%;
-}
-
 
 /* About me */
   .aboutMe {
