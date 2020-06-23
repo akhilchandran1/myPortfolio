@@ -7,6 +7,7 @@ CSS designing
   --topnav: #011f29;
   --topnavHover: #028286;
   --fontColourWhite: #fff;
+  --mainHead:#013750;
   --red: #ff0000;
   --green: #00ff40;
   --yellow: #ffee00;
@@ -515,8 +516,9 @@ About Me
 .aboutMe h1 {
   text-align: center;
   text-transform: uppercase;
-  color: rgb(10, 21, 37);
+  color: var(--mainHead);
   padding: 10px;
+  margin-top: 5%;
 }
 
 .aboutMe p {
@@ -575,6 +577,10 @@ Experience
   line-height: 35px;
   min-height: 400px;
 }
+
+.experience h1 {
+  color: var(--mainHead);
+}
 .ExpContend i {
   font-size: 27px;
 }
@@ -597,6 +603,12 @@ Experience
 .endExpSolid .solid{
   margin-top: 42px;
 }
+
+.usedTechnologies {
+  font-weight: bold;
+  color: #002f3f;
+}
+
 /*
 Projects
 */
@@ -606,6 +618,10 @@ Projects
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: var(--topnavHover);
+}
+
+.project h1 {
+  color: var(--mainHead);
 }
 
 /* Style the buttons inside the tab */
@@ -739,6 +755,7 @@ My Skills
   text-transform: uppercase;
   padding: 30px;
   margin-left: 20%;
+  color: var(--mainHead);
 }
 
 .skillsContainer {
