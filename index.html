@@ -13,7 +13,8 @@
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="HandheldFriendly" content="true" />
-    <!---->
+
+    <!--
     <link
       href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,10 +24,13 @@
       href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
+  -->
     <!-- Import our css styles -->
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
+
+  <div class="container"> <!-- grid -->
     <!--top nav bar-->
     <div class="topnav" id="myTopnav">
       <a href="./portfolio/portfolio.html"
@@ -41,7 +45,6 @@
         <i class="fa fa-bars"></i>
       </a>
       <div class="cv">
-        <p href="#aboutMe">AKHIL CHANDRAN</p>
       </div>
     </div>
     <!--end topnav-->
@@ -128,20 +131,24 @@
     -->
 
     <div class="cardContainer">
-      <div class="row">
-        <div class="col-lg-3 col-sm-6">
           <div class="card hovercard">
             <div class="cardheader"></div>
             <div class="avatar">
               <img alt="" src="./image/MyPhoto/me.jpg" />
             </div>
-
-            <h1>Akhil Chandran</h1>
+            <div class="cardGrid">
+            <h1 class="name">Akhil Chandran</h1>
+            
             <p class="title">BSC IT Final Year Student</p>
             <p class="cctCollege">
               <a href="https://www.cct.ie/">CCT College</a>
             </p>
-            <div style="margin: 24px 0;" class="socialMediaIcons">
+            <button class="emailID">
+              <a href="mailto:akhil9216@gmail.com">akhil9216@gmail.com<i class="fab fa-email"></i
+                ></a>
+            </button>
+          </div>
+            <div class="socialMediaIcons">
               <a href="https://www.instagram.com/akkil9216/"
                 ><i class="fab fa-instagram"></i
               ></a>
@@ -154,20 +161,15 @@
               <a href="https://www.facebook.com/akhil9216"
                 ><i class="fab fa-facebook"></i
               ></a>
-            </div>
-            <p class="contactBtn">
-              <button>
-                <a href="mailto:akhil9216@gmail.com">akhil9216@gmail.com</a>
-              </button>
-            </p>
+                </div>
           </div>
-        </div>
-      </div>
+        
+    
     </div>
     <!--end profile card-->
     <br id="aboutMe" /><br />
     <!--about me-->
-    <div class="aboutMe">
+    <div class="aboutMe about">
       <div>
         <h1>About Me</h1>
         <br />
@@ -486,6 +488,8 @@
 
       <hr class="solid" id="skills" />
     </div>
+<!-- end expContend  -->
+    
     <!--my skills-->
     <div class="mySkills">
       <h1>My Skills</h1>
@@ -604,7 +608,6 @@
 
     <span id="education"></span><br /><br />
 
-    <div>
       <!--Education-->
       <div class="education">
         <h1>Education</h1>
@@ -664,7 +667,6 @@
         </div>
       </div>
       <!--Education end-->
-    </div>
 
     <!--Refrance-->
     <div class="refrance">
@@ -678,7 +680,7 @@
       </div>
     </div>
     <!--Refrance-->
-
+  </div><!-- end grid -->
     <!--start footer-->
     <footer class="footer">
       <div class="footerContainer">
@@ -693,8 +695,11 @@
     </footer>
     <!-- Import our javascript file -->
     <script src="./script/script.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <!--    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+      
+
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </body>
 </html>

@@ -14,12 +14,19 @@ CSS designing
   --white: #ffffff;
 }
 
+.container {
+  display:grid;
+  grid-template-columns: repeat(12, auto);
+}
+
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .topnav {
+  grid-column: span 12;
   overflow: hidden;
   background-color: var(--topnav);
   position: fixed;
@@ -261,43 +268,49 @@ padding-right: 20px;
 /*
 profile card
 */
+
+.cardContainer {
+  grid-column: span 12;
+  min-width: 200px;
+}
+
 .card.hovercard {
   position: relative;
   padding-top: 0;
-  text-align: center;
+  text-align: left;
   background-color: rgba(214, 224, 226, 0.2);
 }
 
 .card.hovercard .cardheader {
   background: url("../image/MyPhoto/graduation.jpg");
   background-size: cover;
-  height: 135px;
+  height: 300px;
 }
 
 .card.hovercard .avatar {
   position: relative;
-  top: -50px;
-  margin-bottom: -50px;
+  top: -80px;
+  margin-bottom: -80px;
 }
 
 .card.hovercard .avatar img {
-  width: 100px;
-  height: 100px;
-  max-width: 100px;
-  max-height: 100px;
+  width: 200px;
+  height: 200px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
   border: 5px solid rgba(255,255,255,0.5);
+  margin-left: 5%;
 }
+.card h1 {
+  margin-left: 5%;
+}
+
 .contactBtn button {
   border: none;
   outline: 0;
   display: inline-block;
   padding: 8px;
-  color: var(--white);
-  background-color: #000;
-  text-align: center;
   cursor: pointer;
   width: 100%;
   font-size: 18px;
@@ -305,23 +318,26 @@ profile card
 
 .card .socialMediaIcons a {
   text-decoration: none;
-  color: rgb(10, 10, 10);
+  color: rgb(0, 0, 0);
+  
 }
 .socialMediaIcons {
   letter-spacing: 8px;
   font-size: 22px;
+  text-align: right;
 }
+
 .socialMediaIcons i:hover {
   -ms-transform: scale(1.5);
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
 .socialMediaIcons .fa-facebook:hover {
-  color: #3b5998;
+  color: #1c63fa;
 }
 
 .socialMediaIcons .fa-linkedin:hover {
-  color: #0e76a8;
+  color: #0089c8;
 }
 
 .socialMediaIcons .fa-instagram:hover {
@@ -329,38 +345,43 @@ profile card
 }
 
 .contactBtn button a{
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 .cctCollege a{
   text-decoration: none;
   color: black;
+  margin-left: 5%;
 }
 
 .contactBtn button:hover {
   background-color: #034b63;
 }
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  text-align: center;
-  font-family: arial;
-  left: 10px;
+.cardGrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  
+}
+
+.name {
+  grid-row:1 / span 2;
+  text-align: left;
+  color: rgb(44, 44, 43);
 }
 
 .title {
-  color: grey;
+  color: rgb(100, 100, 100);
   font-size: 18px;
+  margin-left: 5%;
 }
-.myImage {
-  max-width: 300px;
+
+.emailID {
+  margin-left:5%;
 }
-.cardContainer {
-  padding: 30px;
-  height: 0px;
-  margin-top: 40px;
-  padding-left: 10px;
-}
+
+
 /* Flip image */
 /*
 .flip-card {
@@ -404,23 +425,31 @@ profile card
   transform: rotateY(180deg);
 }
 */
+
+
 /*______________________________*/
 /*
 About Me
 */
 
-.aboutMe div {
-  max-width: 1200px;
-  text-align: center;
-  font-family: arial;
-}
+
+
 .aboutMe {
-  margin-left: 20%;
+  grid-column: span 12;
+  padding: 30px;
   margin-top: 0px;
-  padding-left: 10px;
-  padding-right: 30px;
+  padding-top: 50px;
   border-bottom: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
+.aboutMe div {
+  text-align: center;
+  font-family: arial;
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .aboutMe h1 {
   text-align: center;
   text-transform: uppercase;
@@ -434,17 +463,22 @@ About Me
   letter-spacing: 3px;
   line-height: 40px;
   padding-bottom: 30px;
-  padding-left: 130px;
 }
 
-.aboutUsDiv {
-  margin-left:10%;
-}
+
 
 
 /*
 Experience
 */
+
+.ExpContend {
+  grid-column: span 12;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 
 .ExpTablink {
   background-color: var(--topnavHover);
@@ -456,12 +490,6 @@ Experience
   padding: 14px 16px;
   font-size: 17px;
   width: 25%;
-}
-.ExpContend {
-  margin-left: 20%;
-  margin-top: 30px;
-  padding-left: 10px;
-  padding-right: 30px;
 }
 
 .ExpContend h1 {
@@ -501,9 +529,12 @@ Experience
   background-color: var(--topnavHover);
 }
 .experience {
-  padding: 40px;
+  padding: 6px;
 }
 
+.endExpSolid .solid{
+  margin-top: 42px;
+}
 /*
 Projects
 */
@@ -630,6 +661,10 @@ hr.solidw {
 My Skills
 */
 
+.mySkills {
+  grid-column: span 12;
+}
+
 .skills {
   box-sizing: border-box;
   max-width: 1000px;
@@ -698,9 +733,10 @@ My Skills
 Education
 */
 .education {
+  grid-column:span 12;
   box-sizing: border-box;
   text-transform: uppercase;
-  background-color: #474e5d;
+  background-color: #001c29;
   font-family: Helvetica, sans-serif;
   padding-bottom: 30px;
 }
@@ -742,9 +778,9 @@ Education
   position: absolute;
   width: 25px;
   height: 25px;
-  right: -17px;
+  right: -20px;
   background-color: white;
-  border: 4px solid #ff9f55;
+  border: 4px solid #02a6ac;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -816,8 +852,9 @@ Refrance
 */
 
 .refrance {
+  grid-column: span 12;
   padding: 40px;
-  background-color: var(--topnav);
+  background-color: var(--topnavHover);
   color: aliceblue;
   line-height: 30px;
   letter-spacing: 1.5px;
