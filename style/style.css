@@ -271,7 +271,7 @@ profile card
 
 .cardContainer {
   grid-column: span 12;
-  min-width: 200px;
+  min-width: 300px;
 }
 
 .card.hovercard {
@@ -289,8 +289,10 @@ profile card
 
 .card.hovercard .avatar {
   position: relative;
-  top: -80px;
-  margin-bottom: -80px;
+  top: -93px;
+  margin-bottom: -190px;
+  width: 200px;
+  height: 200px;
 }
 
 .card.hovercard .avatar img {
@@ -300,7 +302,7 @@ profile card
   -moz-border-radius: 50%;
   border-radius: 50%;
   border: 5px solid rgba(255,255,255,0.5);
-  margin-left: 5%;
+  margin-left: 45%;
 }
 .card h1 {
   margin-left: 5%;
@@ -350,37 +352,97 @@ profile card
 }
 .cctCollege a{
   text-decoration: none;
-  color: black;
-  margin-left: 5%;
+  color: rgb(100, 100, 100);
+  font-size: 18px;
 }
 
 .contactBtn button:hover {
   background-color: #034b63;
 }
-.cardGrid {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
-  padding: 10px;
-  
+
+.emailID a{
+  text-decoration: none;
+  color: rgb(100, 100, 100);
+  font-size: 18px;
 }
 
-.name {
-  grid-row:1 / span 2;
-  text-align: left;
-  color: rgb(44, 44, 43);
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(12, auto);
+  grid-gap: 10px;
+  padding: 10px;
 }
 
 .title {
+  grid-area: 1 / 5 / span 1 / auto; /* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
   color: rgb(100, 100, 100);
   font-size: 18px;
-  margin-left: 5%;
+  margin-left: 20%;
 }
+.cctCollege {
+  grid-area: 1 / 7 / span 1/ auto; /* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
 
+  }
 .emailID {
-  margin-left:5%;
+  grid-area: 1 / 9 / span 1/ auto; /* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
 }
 
+/*______________________________________*/
+
+/* Name Animation */
+
+svg {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:  10.5em;
+
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+    stroke: #00ffb7;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #b0fb01;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #1eff00;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #00ff15;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #ffe600;
+	animation-delay: -5s;
+}
+
+.text-copy:nth-child(6){
+	stroke: #e100ff;
+	animation-delay: -6s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+/*_______________________________________*/
 
 /* Flip image */
 /*
