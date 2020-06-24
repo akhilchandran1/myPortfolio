@@ -394,7 +394,7 @@ profile card
 
 svg {
     display: block;
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size:  10.5em;
@@ -990,29 +990,73 @@ footer {
   animation-name: heart;
 }
 
-@media screen and (max-width: 400px) {
-.project .tab button {
-  font-size: 14px;
+@media screen and (max-width:1251px) {
+.title {
+  font-size: 17px;
+  margin-left: 32%;
 }
-.projectContend .content {
-min-width: 250px;
-max-width: 300px;
-width: 70%;
+.cctCollege a {
+  font-size: 17px;
+}
+.emailID a {
+  font-size:17px;
+}
+.projectTypes {
+  padding-right: 29%;
 }
 }
+
+@media screen and (max-width:1125px) {
+  .title {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .cctCollege a {
+    font-size: 16px;
+  }
+  .emailID a {
+    font-size:16px;
+  }
+  .cardGrid {
+    margin-left: 18%;
+    margin-bottom: 20px;
+  }
+  .card.hovercard .avatar img {
+    width: 190px;
+    height: 190px;
+  }
+  svg {
+    margin-left: 30%;
+    max-width: 600px;
+  }
+  .aboutMe {
+    margin-bottom: 0px;
+  }
+  .ExpContend h1 {
+    padding: 0px;
+  }
+}
+
 
 /* Media queries - Responsive timeline on screens less than 1000px wide */
 @media screen and (max-width: 1000px) {
 
-  /* Card container */
-  .cardContainer {
-    padding-left: 40%;
-  }
+svg {
+  margin-left: 25%;
+  max-width: 630px;
+  font-size: 8em;
+}
+.card.hovercard .avatar img {
+  width: 170px;
+  height: 170px;
+  margin-left: 18%;
+}
+
 /*___________________________*/
 
   /* About me */
   .aboutMe {
-    padding-top: 428px;
+    padding-top: 8%;
   }
   .aboutMe p{
     padding-left: 0px;
@@ -1020,9 +1064,7 @@ width: 70%;
   .aboutMe, .ExpContend {
     margin-left: 2%;
   }
-.card{
-  left: -73px;
-}
+
   /*_________________________*/
 
   /* to navigation bar view changing show menu as child*/
@@ -1030,7 +1072,7 @@ width: 70%;
     display: none;
   }
   .topnav a.icon {
-    float: left;
+    float: right;
     display: block;
   }
   .topnav.responsive {
@@ -1069,7 +1111,8 @@ width: 70%;
   line-height: 25px;
   min-width: 340px;
   font-size: 13px;
-  width: 90%;
+  max-width: 87.4%;
+  padding: 10px;
 }
 .projectContend .collapsible {
   background-color: var(--topnav);
@@ -1107,7 +1150,7 @@ width: 70%;
   /* Make sure all circles are at the same spot */
   .left::after,
   .right::after {
-    left: 15px;
+    left: 26px;
   }
 
   /* Make all right containers behave like the left ones */
@@ -1135,9 +1178,13 @@ width: auto;
   padding: 0px;
 }
 
-.endExpSolid hr{
+.endExpSolid .solid{
   margin-top: 48px;
 }
+.ExpContend {
+  margin-top: -31px;
+}
+
 
 /*____________________________*/
 
@@ -1146,8 +1193,54 @@ width: auto;
   padding-left: 2%;
   padding-right: 2%;
 } 
+.mySkills h1 {
+  margin-left: 7%;
+}
 /*____________________________*/
 
+}
+
+@media screen and (max-width: 761px) {
+  .cardGrid {
+    margin-left: 25%;
+  }
+  .aboutMe h1 {
+    margin-top: 14%;
+    padding: 0em;
+  }
+  .left::after, .right::after {
+    left: 16px;
+}
+svg{
+  font-size: 7em;
+  margin-left: 17%;
+}
+.card.hovercard .avatar img {
+  width: 150px;
+  height: 150px;
+}
+}
+@media screen and (max-width: 682px){
+  .card.hovercard .avatar img {
+    width: 140px;
+    height: 140px;
+    margin-top: 28%;
+  }
+  .cardGrid {
+    margin-top: 5%;
+}
+
+}
+
+@media screen and (max-width: 625px){
+  svg {
+    font-size: 6em;
+    margin-left: 12%;
+}
+.card.hovercard .avatar img {
+  width: 140px;
+  height: 140px;
+}
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -1189,7 +1282,7 @@ width: auto;
     display: none;
   }
   .topnav a.icon {
-    float: left;
+    float: right;
     display: block;
   }
   .topnav.responsive {
@@ -1312,4 +1405,172 @@ font-size: 30px;
 }
 
 }
+@media screen and (max-width:592px){
+  .cardGrid {
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 555px){
+  .card.hovercard .avatar img {
+    width: 110px;
+    height: 110px;
+    margin-left: 10%;
+    margin-top: 50%;
+}
+svg {
+  font-size: 5.2em;
+  margin-left: 4%;
+}
+.ExpTabcontent {
+  margin-right: 0px;
+}
+.endExpSolid .solid {
+  margin-top: 41px;
+}
+.projectContend .content {
+  max-width: 86%;
+  padding: 10px;
+}
+.title {
+  margin-left: 0px;
+  font-size: 14px;
+}
+.cctCollege {
+  font-size: 14px;
+}
+.emailID {
+  font-size: 14px;
+}
+.cardGrid {
+  margin-left: 25%;
+  margin-top: 10%;
+}
+.aboutMe h1 {
+  margin-top: 21%;
+}
 
+}
+
+@media screen and (max-width:484px){
+  .card.hovercard .avatar img {
+    width: 120px;
+    height: 120px;
+    margin-left: 8%;
+}
+svg {
+  font-size: 4.2em;
+  margin-left: -3%;
+}
+}
+
+@media screen and (max-width:455px){
+  .cardGrid {
+    margin-left: -6%;
+    margin-top: 28%;
+}
+
+.card.hovercard .avatar img {
+  width: 110px;
+  height: 110px;
+}
+.aboutMe h1 {
+  margin-top: 27%;
+}
+svg{
+  font-size: 8.2em;
+}
+.projectContend .content {
+  max-width: 85%;
+  padding: 10px;
+}
+}
+
+@media screen and (max-width:424px){
+  svg {
+    margin-left: -8%;
+}
+#myChatbot a {
+  right: -115px;
+}
+}
+@media screen and (max-width: 406px) {
+  .cardGrid {
+    margin-left: -38px;
+    margin-top: 34%;
+    margin-right: 10px;
+}
+.socialMediaIcons {
+  text-align: center;
+}
+.card.hovercard .avatar {
+  width: 130px;
+  height: 130;
+}
+.text-copy {
+  stroke-width: 5.2px;
+}
+.card.hovercard .avatar img {
+  width: 100px;
+  height: 100px;
+  margin-top: 92%;
+}
+.aboutMe h1 {
+  margin-top: 41%;
+}
+#chatbot {
+  top: 225px;
+}
+#myChatbot a {
+  right: -116px;
+}
+}
+@media screen and (max-width: 400px) {
+  .project .tab button {
+    font-size: 14px;
+  }
+  .projectContend .content {
+  min-width: 250px;
+  max-width: 300px;
+  width: 90%;
+  }
+  
+  }
+@media screen and (max-width: 365px) {
+.aboutMe p {
+  letter-spacing: .8px;
+  padding-bottom: 0px;
+  font-size: small;
+}
+.aboutMe {
+  padding: 10px;
+}
+.refrance h1 {
+  font-size: 23px;
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
+.ExpContend {
+  min-width: 300px;
+}
+.card.hovercard .avatar img {
+  margin-top: 112%;
+}
+.cardGrid {
+  margin-top: 42%;
+}
+.aboutMe h1 {
+  margin-top: 48%;
+}
+
+}
+@media screen and (max-width: 320px) {
+  .ExpContend {
+    min-width: 250px;
+  }
+  .topnav a {
+    font-size: 13px;
+}
+.aboutMe {
+  padding: 10px;
+}
+}
