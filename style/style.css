@@ -2,12 +2,13 @@
 CSS designing
 */
 
+
 :root {
   /* making root colors */
   --topnav: #011f29;
   --topnavHover: #028286;
   --fontColourWhite: #fff;
-  --mainHead:#013750;
+  --mainHead: #013750;
   --red: #ff0000;
   --green: #00ff40;
   --yellow: #ffee00;
@@ -16,14 +17,14 @@ CSS designing
 }
 
 .container {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(12, auto);
 }
-
 
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(243, 243, 243);
 }
 
 .topnav {
@@ -69,7 +70,6 @@ Top Navigation responsive
   display: none;
 }
 
-
 .cv {
   float: left;
   color: var(--fontColourWhite);
@@ -103,14 +103,16 @@ Chatbot
   z-index: 10;
 }
 #myChatbot a:hover {
-  right:0;
+  right: 0;
 }
 #chatbot {
   top: 100px;
   background-color: rgb(255, 103, 2);
 }
 
-.chatBox {box-sizing: border-box;}
+.chatBox {
+  box-sizing: border-box;
+}
 
 /* Button used to open the chat form - fixed at the bottom of the page */
 .chatBox .open-button {
@@ -142,7 +144,7 @@ Chatbot
   padding: 10px;
   background-color: white;
 }
-.chatBox .roboForm-container img{
+.chatBox .roboForm-container img {
   max-width: 100px;
 }
 
@@ -171,7 +173,7 @@ Chatbot
   border: none;
   cursor: pointer;
   width: 100%;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   opacity: 0.8;
   border-radius: 5px 5px 5px 5px;
   font-size: medium;
@@ -180,12 +182,11 @@ Chatbot
   padding-right: 10px;
 }
 
-.myRobo img:hover{
+.myRobo img:hover {
   zoom: 140%;
   transform: rotate(20deg);
   padding-bottom: 30px;
 }
-
 
 .myRobo .pocking {
   visibility: hidden;
@@ -224,11 +225,12 @@ Chatbot
 }
 
 /* Add some hover effects to buttons */
-.chatBox .roboForm-container .btn:hover, .open-button:hover {
+.chatBox .roboForm-container .btn:hover,
+.open-button:hover {
   opacity: 1;
 }
 .roboKnowledge button i {
-padding-right: 20px;
+  padding-right: 20px;
 }
 
 .roboKnowledge .whatIKnow {
@@ -261,7 +263,7 @@ padding-right: 20px;
   border-color: black transparent transparent transparent;
 }
 
-.roboKnowledge:hover .whatIKnow  {
+.roboKnowledge:hover .whatIKnow {
   visibility: visible;
 }
 /*______________________________________*/
@@ -302,7 +304,7 @@ profile card
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  border: 5px solid rgba(255,255,255,0.5);
+  border: 5px solid rgba(255, 255, 255, 0.5);
   margin-left: 45%;
 }
 .card h1 {
@@ -322,7 +324,6 @@ profile card
 .card .socialMediaIcons a {
   text-decoration: none;
   color: rgb(0, 0, 0);
-  
 }
 .socialMediaIcons {
   letter-spacing: 8px;
@@ -347,11 +348,16 @@ profile card
   color: #f56040;
 }
 
-.contactBtn button a{
+.socialMediaIcons .fa-twitter:hover {
+  color:#08bffc;
+  
+}
+
+.contactBtn button a {
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
-.cctCollege a{
+.cctCollege a {
   text-decoration: none;
   color: rgb(100, 100, 100);
   font-size: 18px;
@@ -361,7 +367,7 @@ profile card
   background-color: #034b63;
 }
 
-.emailID a{
+.emailID a {
   text-decoration: none;
   color: rgb(100, 100, 100);
   font-size: 18px;
@@ -381,11 +387,10 @@ profile card
   margin-left: 20%;
 }
 .cctCollege {
-  grid-area: 1 / 7 / span 1/ auto; /* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
-
-  }
+  grid-area: 1 / 7 / span 1 / auto; /* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+}
 .emailID {
-  grid-area: 1 / 9 / span 1/ auto; /* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+  grid-area: 1 / 9 / span 1 / auto; /* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
 }
 
 /*______________________________________*/
@@ -393,55 +398,56 @@ profile card
 /* Name Animation */
 
 svg {
-    display: block;
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:  10.5em;
-
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10.5em;
 }
 
 .text-copy {
-    fill: none;
-    stroke: white;
-    stroke-dasharray: 6% 29%;
-    stroke-width: 5px;
-    stroke-dashoffset: 0%;
-    animation: stroke-offset 5.5s infinite linear;
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
 }
 
-.text-copy:nth-child(1){
-    stroke: #00ffb7;
-	animation-delay: -1;
+.text-copy:nth-child(1) {
+  stroke: #00ffb7;
+  animation-delay: -1;
 }
 
-.text-copy:nth-child(2){
-	stroke: #b0fb01;
-	animation-delay: -2s;
+.text-copy:nth-child(2) {
+  stroke: #b0fb01;
+  animation-delay: -2s;
 }
 
-.text-copy:nth-child(3){
-	stroke: #1eff00;
-	animation-delay: -3s;
+.text-copy:nth-child(3) {
+  stroke: #1eff00;
+  animation-delay: -3s;
 }
 
-.text-copy:nth-child(4){
-	stroke: #00ff15;
-	animation-delay: -4s;
+.text-copy:nth-child(4) {
+  stroke: #00ff15;
+  animation-delay: -4s;
 }
 
-.text-copy:nth-child(5){
-	stroke: #ffe600;
-	animation-delay: -5s;
+.text-copy:nth-child(5) {
+  stroke: #ffe600;
+  animation-delay: -5s;
 }
 
-.text-copy:nth-child(6){
-	stroke: #e100ff;
-	animation-delay: -6s;
+.text-copy:nth-child(6) {
+  stroke: #e100ff;
+  animation-delay: -6s;
 }
 
-@keyframes stroke-offset{
-	100% {stroke-dashoffset: -35%;}
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
 }
 /*_______________________________________*/
 
@@ -489,13 +495,10 @@ svg {
 }
 */
 
-
 /*______________________________*/
 /*
 About Me
 */
-
-
 
 .aboutMe {
   grid-column: span 12;
@@ -529,9 +532,6 @@ About Me
   padding-bottom: 30px;
 }
 
-
-
-
 /*
 Experience
 */
@@ -542,7 +542,6 @@ Experience
   padding-left: 20px;
   padding-right: 20px;
 }
-
 
 .ExpTablink {
   background-color: var(--topnavHover);
@@ -600,7 +599,7 @@ Experience
   padding: 6px;
 }
 
-.endExpSolid .solid{
+.endExpSolid .solid {
   margin-top: 42px;
 }
 
@@ -717,7 +716,6 @@ Projects
 }
 .projectTypes .content i {
   padding: 10px 10px 10px 5px;
-
 }
 .projectTypes .content i:hover {
   -ms-transform: scale(1.5);
@@ -741,78 +739,23 @@ My Skills
 
 .mySkills {
   grid-column: span 12;
-}
-
-.skills {
-  box-sizing: border-box;
-  max-width: 1000px;
-  padding-left: 20%;
-  letter-spacing: 2px;
+  background-color: rgb(243, 242, 242);
+  padding-bottom: 5%;
 }
 
 .mySkills h1 {
   text-align: center;
   text-transform: uppercase;
   padding: 30px;
-  margin-left: 20%;
   color: var(--mainHead);
 }
 
-.skillsContainer {
-  width: 100%;
-  background-color: #ddd;
-}
-
-.skills p {
-  text-align: left;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: rgb(0, 0, 0);
-}
-
-.html,
-.css,
-.teamWork,
-.teamWorkSoftwares,
-.presentation {
-  width: 95%;
-  background-color: #4caf50;
-}
-.js,
-.mongoDB,
-.java,
-.ionic,
-.api,
-.photoshop,
-.applicationSoftwares {
-  width: 80%;
-  background-color: #2196f3;
-}
-.php,
-.bootstrap {
-  width: 60%;
-  background-color: #f44336;
-}
-.angular,
-.typeScript,
-.jQuery,
-.xml,
-.firebase {
-  width: 70%;
-  background-color: #00cad1;
-}
-.json,
-.mySql,
-.git {
-  width: 90%;
-  background-color: #bcd100;
-}
 
 /*
 Education
 */
 .education {
-  grid-column:span 12;
+  grid-column: span 12;
   box-sizing: border-box;
   text-transform: uppercase;
   background-color: #001c29;
@@ -961,56 +904,56 @@ footer {
   z-index: 10;
 }
 
-.heartSymbel img{
+.heartSymbel img {
   animation: 2s ease 0s normal none infinite running animateHeartBeat;
   overflow: inherit;
   position: relative;
-  display:inline-block;
-  max-height:20px;
+  display: inline-block;
+  max-height: 20px;
   padding-left: 5px;
   padding-right: 5px;
 }
 
 @keyframes animateHeartBeat {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
   5% {
-      transform: scale(1.4);
+    transform: scale(1.4);
   }
   10% {
-      transform: scale(1.3);
+    transform: scale(1.3);
   }
   15% {
-      transform: scale(1.8);
+    transform: scale(1.8);
   }
   50% {
-      transform: scale(1);
+    transform: scale(1);
   }
   100% {
-      transform: scale(1);
+    transform: scale(1);
   }
-  }
-  @keyframes animateHeartBeat {
+}
+@keyframes animateHeartBeat {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
   5% {
-      transform: scale(1.4);
+    transform: scale(1.4);
   }
   10% {
-      transform: scale(1.3);
+    transform: scale(1.3);
   }
   15% {
-      transform: scale(1.8);
+    transform: scale(1.8);
   }
   50% {
-      transform: scale(1);
+    transform: scale(1);
   }
   100% {
-      transform: scale(1);
+    transform: scale(1);
   }
-  }
+}
 
 /*
 .heartSymbel {
@@ -1043,23 +986,23 @@ footer {
 }
 */
 
-@media screen and (max-width:1251px) {
-.title {
-  font-size: 17px;
-  margin-left: 32%;
-}
-.cctCollege a {
-  font-size: 17px;
-}
-.emailID a {
-  font-size:17px;
-}
-.projectTypes {
-  padding-right: 29%;
-}
+@media screen and (max-width: 1251px) {
+  .title {
+    font-size: 17px;
+    margin-left: 32%;
+  }
+  .cctCollege a {
+    font-size: 17px;
+  }
+  .emailID a {
+    font-size: 17px;
+  }
+  .projectTypes {
+    padding-right: 29%;
+  }
 }
 
-@media screen and (max-width:1125px) {
+@media screen and (max-width: 1125px) {
   .title {
     font-size: 16px;
     margin-left: 10px;
@@ -1068,7 +1011,7 @@ footer {
     font-size: 16px;
   }
   .emailID a {
-    font-size:16px;
+    font-size: 16px;
   }
   .cardGrid {
     margin-left: 18%;
@@ -1090,31 +1033,30 @@ footer {
   }
 }
 
-
 /* Media queries - Responsive timeline on screens less than 1000px wide */
 @media screen and (max-width: 1000px) {
+  svg {
+    margin-left: 25%;
+    max-width: 630px;
+    font-size: 8em;
+  }
+  .card.hovercard .avatar img {
+    width: 170px;
+    height: 170px;
+    margin-left: 18%;
+  }
 
-svg {
-  margin-left: 25%;
-  max-width: 630px;
-  font-size: 8em;
-}
-.card.hovercard .avatar img {
-  width: 170px;
-  height: 170px;
-  margin-left: 18%;
-}
-
-/*___________________________*/
+  /*___________________________*/
 
   /* About me */
   .aboutMe {
     padding-top: 8%;
   }
-  .aboutMe p{
+  .aboutMe p {
     padding-left: 0px;
   }
-  .aboutMe, .ExpContend {
+  .aboutMe,
+  .ExpContend {
     margin-left: 2%;
   }
 
@@ -1146,44 +1088,43 @@ svg {
     -webkit-transform: none;
     transform: none;
   }
-/*__________________________*/
+  /*__________________________*/
 
-/* Project */
+  /* Project */
 
+  .project {
+    padding-top: -8px;
+  }
+  .projectTypes {
+    padding-right: 0px;
+    letter-spacing: 1.5px;
+    min-height: 300px;
+  }
+  .projectContend .content {
+    padding: 0px;
+    line-height: 25px;
+    min-width: 340px;
+    font-size: 13px;
+    max-width: 87.4%;
+    padding: 10px;
+  }
+  .projectContend .collapsible {
+    background-color: var(--topnav);
+    padding: 10px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    width: 90%;
+  }
+  .projectTypes button {
+    min-width: 340px;
+  }
+  .project .tabcontent {
+    padding: 12px 3px;
+  }
 
-.project {
-  padding-top: -8px;
-}
-.projectTypes {
-  padding-right: 0px;
-  letter-spacing: 1.5px;
-  min-height: 300px;
-}
-.projectContend .content {
-  padding: 0px;
-  line-height: 25px;
-  min-width: 340px;
-  font-size: 13px;
-  max-width: 87.4%;
-  padding: 10px;
-}
-.projectContend .collapsible {
-  background-color: var(--topnav);
-  padding: 10px;
-  font-size: 11px;
-  letter-spacing: 1px;
-  width: 90%;
-}
-.projectTypes button {
-  min-width: 340px;
-}
-.project .tabcontent {
-  padding: 12px 3px;
-}
+  /*____________________________*/
 
-/*____________________________*/
-
-/* Education */
+  /* Education */
 
   /* Full-width containers */
   .EduContainer {
@@ -1219,38 +1160,36 @@ svg {
     left: 5%;
   }
 
-/*____________________________*/
+  /*____________________________*/
 
-/* Experiance */
+  /* Experiance */
 
-.ExpTablink {
-width: auto;
-}
+  .ExpTablink {
+    width: auto;
+  }
 
-.experience {
-  padding: 0px;
-}
+  .experience {
+    padding: 0px;
+  }
 
-.endExpSolid .solid{
-  margin-top: 48px;
-}
-.ExpContend {
-  margin-top: -31px;
-}
+  .endExpSolid .solid {
+    margin-top: 48px;
+  }
+  .ExpContend {
+    margin-top: -31px;
+  }
 
+  /*____________________________*/
 
-/*____________________________*/
-
-/* skills */
-.skills {
-  padding-left: 2%;
-  padding-right: 2%;
-} 
-.mySkills h1 {
-  margin-left: 7%;
-}
-/*____________________________*/
-
+  /* skills */
+  .skills {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .mySkills h1 {
+    margin-left: 7%;
+  }
+  /*____________________________*/
 }
 
 @media screen and (max-width: 761px) {
@@ -1261,19 +1200,20 @@ width: auto;
     margin-top: 14%;
     padding: 0em;
   }
-  .left::after, .right::after {
+  .left::after,
+  .right::after {
     left: 16px;
+  }
+  svg {
+    font-size: 7em;
+    margin-left: 17%;
+  }
+  .card.hovercard .avatar img {
+    width: 150px;
+    height: 150px;
+  }
 }
-svg{
-  font-size: 7em;
-  margin-left: 17%;
-}
-.card.hovercard .avatar img {
-  width: 150px;
-  height: 150px;
-}
-}
-@media screen and (max-width: 682px){
+@media screen and (max-width: 682px) {
   .card.hovercard .avatar img {
     width: 140px;
     height: 140px;
@@ -1281,19 +1221,18 @@ svg{
   }
   .cardGrid {
     margin-top: 5%;
+  }
 }
 
-}
-
-@media screen and (max-width: 625px){
+@media screen and (max-width: 625px) {
   svg {
     font-size: 6em;
     margin-left: 12%;
-}
-.card.hovercard .avatar img {
-  width: 140px;
-  height: 140px;
-}
+  }
+  .card.hovercard .avatar img {
+    width: 140px;
+    height: 140px;
+  }
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -1356,9 +1295,9 @@ svg{
     -webkit-transform: none;
     transform: none;
   }
-/*_____________________________*/
+  /*_____________________________*/
 
-/* About me */
+  /* About me */
   .aboutMe {
     margin-top: 30px;
     margin-left: 0%;
@@ -1448,173 +1387,169 @@ svg{
     font-size: 13px;
     min-width: 200px;
   }
-.refrance {
-  font-size: 15px;
-  letter-spacing: 1.2px;
-  padding-bottom: 20%;
+  .refrance {
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    padding-bottom: 20%;
+  }
+  .refrance h1 {
+    font-size: 30px;
+  }
 }
-.refrance h1 {
-font-size: 30px;
-}
-
-}
-@media screen and (max-width:592px){
+@media screen and (max-width: 592px) {
   .cardGrid {
     margin-top: 10%;
   }
 }
-@media screen and (max-width: 555px){
+@media screen and (max-width: 555px) {
   .card.hovercard .avatar img {
     width: 110px;
     height: 110px;
     margin-left: 10%;
     margin-top: 50%;
-}
-svg {
-  font-size: 5.2em;
-  margin-left: 4%;
-}
-.ExpTabcontent {
-  margin-right: 0px;
-}
-.endExpSolid .solid {
-  margin-top: 41px;
-}
-.projectContend .content {
-  max-width: 86%;
-  padding: 10px;
-}
-.title {
-  margin-left: 0px;
-  font-size: 14px;
-}
-.cctCollege {
-  font-size: 14px;
-}
-.emailID {
-  font-size: 14px;
-}
-.cardGrid {
-  margin-left: 25%;
-  margin-top: 10%;
-}
-.aboutMe h1 {
-  margin-top: 21%;
+  }
+  svg {
+    font-size: 5.2em;
+    margin-left: 4%;
+  }
+  .ExpTabcontent {
+    margin-right: 0px;
+  }
+  .endExpSolid .solid {
+    margin-top: 41px;
+  }
+  .projectContend .content {
+    max-width: 86%;
+    padding: 10px;
+  }
+  .title {
+    margin-left: 0px;
+    font-size: 14px;
+  }
+  .cctCollege {
+    font-size: 14px;
+  }
+  .emailID {
+    font-size: 14px;
+  }
+  .cardGrid {
+    margin-left: 25%;
+    margin-top: 10%;
+  }
+  .aboutMe h1 {
+    margin-top: 21%;
+  }
 }
 
-}
-
-@media screen and (max-width:484px){
+@media screen and (max-width: 484px) {
   .card.hovercard .avatar img {
     width: 120px;
     height: 120px;
     margin-left: 8%;
-}
-svg {
-  font-size: 4.2em;
-  margin-left: -3%;
-}
+  }
+  svg {
+    font-size: 4.2em;
+    margin-left: -3%;
+  }
 }
 
-@media screen and (max-width:455px){
+@media screen and (max-width: 455px) {
   .cardGrid {
     margin-left: -6%;
     margin-top: 28%;
+  }
+
+  .card.hovercard .avatar img {
+    width: 110px;
+    height: 110px;
+  }
+  .aboutMe h1 {
+    margin-top: 27%;
+  }
+  svg {
+    font-size: 8.2em;
+  }
+  .projectContend .content {
+    max-width: 85%;
+    padding: 10px;
+  }
 }
 
-.card.hovercard .avatar img {
-  width: 110px;
-  height: 110px;
-}
-.aboutMe h1 {
-  margin-top: 27%;
-}
-svg{
-  font-size: 8.2em;
-}
-.projectContend .content {
-  max-width: 85%;
-  padding: 10px;
-}
-}
-
-@media screen and (max-width:424px){
+@media screen and (max-width: 424px) {
   svg {
     margin-left: -8%;
-}
-#myChatbot a {
-  right: -115px;
-}
+  }
+  #myChatbot a {
+    right: -115px;
+  }
 }
 @media screen and (max-width: 406px) {
   .cardGrid {
     margin-left: -38px;
     margin-top: 34%;
     margin-right: 10px;
-}
-.socialMediaIcons {
-  text-align: center;
-}
-.card.hovercard .avatar {
-  width: 130px;
-  height: 130;
-}
-.text-copy {
-  stroke-width: 5.2px;
-}
-.card.hovercard .avatar img {
-  width: 100px;
-  height: 100px;
-  margin-top: 92%;
-}
-.aboutMe h1 {
-  margin-top: 41%;
-}
-#chatbot {
-  top: 225px;
-}
-#myChatbot a {
-  right: -116px;
-}
+  }
+  .socialMediaIcons {
+    text-align: center;
+  }
+  .card.hovercard .avatar {
+    width: 130px;
+    height: 130;
+  }
+  .text-copy {
+    stroke-width: 5.2px;
+  }
+  .card.hovercard .avatar img {
+    width: 100px;
+    height: 100px;
+    margin-top: 92%;
+  }
+  .aboutMe h1 {
+    margin-top: 41%;
+  }
+  #chatbot {
+    top: 225px;
+  }
+  #myChatbot a {
+    right: -116px;
+  }
 }
 @media screen and (max-width: 400px) {
   .project .tab button {
     font-size: 14px;
   }
   .projectContend .content {
-  min-width: 250px;
-  max-width: 300px;
-  width: 90%;
+    min-width: 250px;
+    max-width: 300px;
+    width: 90%;
   }
-  
-  }
+}
 @media screen and (max-width: 365px) {
-.aboutMe p {
-  letter-spacing: .8px;
-  padding-bottom: 0px;
-  font-size: small;
-}
-.aboutMe {
-  padding: 10px;
-}
-.refrance h1 {
-  font-size: 23px;
-  letter-spacing: 1px;
-  margin-left: 10px;
-}
-.ExpContend {
-  min-width: 300px;
-}
-.card.hovercard .avatar img {
-  margin-top: 112%;
-}
-.cardGrid {
-  margin-top: 42%;
-}
-.aboutMe h1 {
-  margin-top: 48%;
-}
-
+  .aboutMe p {
+    letter-spacing: 0.8px;
+    padding-bottom: 0px;
+    font-size: small;
+  }
+  .aboutMe {
+    padding: 10px;
+  }
+  .refrance h1 {
+    font-size: 23px;
+    letter-spacing: 1px;
+    margin-left: 10px;
+  }
+  .ExpContend {
+    min-width: 300px;
+  }
+  .card.hovercard .avatar img {
+    margin-top: 112%;
+  }
+  .cardGrid {
+    margin-top: 42%;
+  }
+  .aboutMe h1 {
+    margin-top: 48%;
+  }
 }
 @media screen and (max-width: 320px) {
   .ExpContend {
@@ -1622,8 +1557,8 @@ svg{
   }
   .topnav a {
     font-size: 13px;
-}
-.aboutMe {
-  padding: 10px;
-}
+  }
+  .aboutMe {
+    padding: 10px;
+  }
 }

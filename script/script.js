@@ -7,7 +7,7 @@ const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecogni
 const recoder = new SpeechRecognition();
 
 recoder.onstart = () => {
-    console.log('Hey, I am here..!! Lets Talk');
+    //console.log('Hey, I am here..!! Lets Talk');
     const transcript = "Hey, I am here..!! Lets Talk";
     voiceToText.textContent = transcript
 
@@ -40,7 +40,7 @@ function chatbotVoice(message) {
     } else if (message.includes('contact number')) {
         speech.text = "offcourse. yes. my mobile number is 0892126803";
     } else if (message.includes('you know')) {
-        speech.text = "I know the answer of How are you, I know the answer of Whats your name, I know the answer of Whats your Email ID, I know the answer of Whats your Mobile number, I know the answer of Whats your Contact number, I know the answer of Tell me about yourself, I know the answer of When will you available to start, I know the answer of whats your current visa status, I know the answer of Are you eligible to work in Ireland, I know the answer of Are you currently working, I know the answer of When will you finish your college, I know the answer of Are you currently available to start, I know the answer of Can you start working from home, I know the answer of Are you intrested in part time, I know the answer of Are you planning to study Masters, I know the answer of Are you holding stamp 4 , I know the answer of Tell me about your strength and weakness, I know the answer of What is your salary expectation, I know the answer of Talk about an achievement";
+        voiceToText.textContent = "I know the answer of How are you, I know the answer of Whats your name, I know the answer of Whats your Email ID, I know the answer of Whats your Mobile number, I know the answer of Whats your Contact number, I know the answer of Tell me about yourself, I know the answer of When will you available to start, I know the answer of whats your current visa status, I know the answer of Are you eligible to work in Ireland, I know the answer of Are you currently working, I know the answer of When will you finish your college, I know the answer of Are you currently available to start, I know the answer of Can you start working from home, I know the answer of Are you intrested in part time, I know the answer of Are you planning to study Masters, I know the answer of Are you holding stamp 4 , I know the answer of Tell me about your strength and weakness, I know the answer of What is your salary expectation, I know the answer of Talk about an achievement";
     } else if (message.includes('your name')) {
         speech.text = "I am dont have a name. but i am pretending Akhil, so you can talk me like you talk to Akhil";
     } else if (message.includes('about yourself')) {
